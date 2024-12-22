@@ -358,6 +358,10 @@ select.form-control:focus {
 	max-width: 1300px;
 	position: relative;
 }
+.containerMax {
+	max-width: 100%;
+	position: relative;
+}
 
 section {
 	padding: 130px 0;
