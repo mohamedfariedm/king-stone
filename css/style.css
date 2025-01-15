@@ -2207,7 +2207,6 @@ header#pq-header .pq-bottom-header .navbar .navbar-nav li a {
   text-transform: uppercase;
   line-height: 22px;
   font-weight: 600;
-  letter-spacing: 1px;
 }
 
 header#pq-header .pq-bottom-header .navbar .navbar-nav li a:focus,
