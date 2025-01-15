@@ -1,0 +1,103 @@
+{
+    "en": {
+      "title": "King Stone - Finishes",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Finishes"
+      },
+      "sections": {
+        "finishesTitle": "Finishes",
+        "finishesSubTitle": "Explore Our Finishes",
+        "categories": {
+          "saw-cut": "Saw-Cut",
+          "polished": "Polished",
+          "honed": "Honed",
+          "brushed": "Brushed",
+          "bush-hammered": "Bush Hammered",
+          "acid-wash": "Acid Wash",
+          "scratch": "Scratch",
+          "tumbled": "Tumbled",
+          "stripped": "Stripped",
+          "flamed": "Flamed",
+          "sandblasted": "Sandblasted",
+          "split-face": "Split Face"
+        }
+      }
+    },
+    "ar": {
+      "title": "كينج ستون - التشطيبات",
+      "breadcrumb": {
+        "home": "الرئيسية",
+        "current": "التشطيبات"
+      },
+      "sections": {
+        "finishesTitle": "التشطيبات",
+        "finishesSubTitle": "اكتشف تشطيباتنا",
+        "categories": {
+          "saw-cut": "مشروم",
+          "polished": "ملمع",
+          "honed": "مطفي",
+          "brushed": "مخدود",
+          "bush-hammered": "مطرقة بوش",
+          "acid-wash": "غسيل حمضي",
+          "scratch": "خدوش",
+          "tumbled": "متعرج",
+          "stripped": "مخطط",
+          "flamed": "ملتهب",
+          "sandblasted": "رملي",
+          "split-face": "مقسم الوجه"
+        }
+      }
+    },
+    "fr": {
+      "title": "King Stone - Finitions",
+      "breadcrumb": {
+        "home": "Accueil",
+        "current": "Finitions"
+      },
+      "sections": {
+        "finishesTitle": "Finitions",
+        "finishesSubTitle": "Découvrez nos finitions",
+        "categories": {
+          "saw-cut": "Scié",
+          "polished": "Poli",
+          "honed": "Adouci",
+          "brushed": "Brossé",
+          "bush-hammered": "Martelé",
+          "acid-wash": "Lavage à l'acide",
+          "scratch": "Rayé",
+          "tumbled": "Vieilli",
+          "stripped": "Strié",
+          "flamed": "Flammé",
+          "sandblasted": "Sablé",
+          "split-face": "Fendu"
+        }
+      }
+    },
+    "pt": {
+      "title": "King Stone - Acabamentos",
+      "breadcrumb": {
+        "home": "Início",
+        "current": "Acabamentos"
+      },
+      "sections": {
+        "finishesTitle": "Acabamentos",
+        "finishesSubTitle": "Explore nossos acabamentos",
+        "categories": {
+          "saw-cut": "Corte a Serra",
+          "polished": "Polido",
+          "honed": "Fosco",
+          "brushed": "Escovado",
+          "bush-hammered": "Martelado",
+          "acid-wash": "Lavação Ácida",
+          "scratch": "Arranhado",
+          "tumbled": "Envelhecido",
+          "stripped": "Listrado",
+          "flamed": "Flamejado",
+          "sandblasted": "Jateado",
+          "split-face": "Rachado"
+        }
+      }
+    }
+  }
+  

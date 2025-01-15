@@ -4,31 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>King Stone - Finishes</title>
+    <title id="page-title">King Stone - Finishes</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Custom Scrollbar -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <!-- Animation -->
     <link rel="stylesheet" href="css/animations.min.css" />
-    <!-- Owl Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <!-- Icons -->
     <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css" />
     <link rel="stylesheet" href="fonts/flaticon/flaticon.css" />
-    <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Responsive -->
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- Favicon -->
-    <!-- Bootstrap -->
-    <!-- Custom Scrollbar -->
-    <!-- Animation -->
-    <!-- Icons -->
-    <!-- Magnific Popup -->
     <link rel="stylesheet" href="css/magnific-popup.min.css" />
     <style>
       /* Custom Styles */
@@ -50,70 +37,58 @@
         display: block;
         border-radius: 10px;
       }
-      /* Arrows */
-.swiper-button-next,
-.swiper-button-prev {
-  color: orange !important; /* Sets the color of the arrow */
-  font-size: 20px; /* Adjusts the size of the arrows if needed */
-  transition: color 0.3s ease; /* Adds a hover transition effect */
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: darkorange; /* Slightly darker color for hover effect */
-}
-
-/* Pagination Bullets */
-.swiper-pagination-bullet {
-  background-color: orange !important; /* Sets the background color of the bullets */
-  opacity: 0.7; /* Makes the bullets slightly transparent */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: darkorange; /* Highlight active bullet with a darker orange */
-  opacity: 1; /* Makes the active bullet fully opaque */
-  transform: scale(1.2); /* Slightly enlarges the active bullet */
-}
-
-.swiper-pagination-bullet:hover {
-  opacity: 1; /* Fully visible on hover */
-  transform: scale(1.2); /* Enlarge bullets on hover */
-}
-
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: orange !important;
+        font-size: 20px;
+        transition: color 0.3s ease;
+      }
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        color: darkorange;
+      }
+      .swiper-pagination-bullet {
+        background-color: orange !important;
+        opacity: 0.7;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: darkorange;
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      .swiper-pagination-bullet:hover {
+        opacity: 1;
+        transform: scale(1.2);
+      }
     </style>
-    <!-- Style -->
-    <!-- Responsive -->
-    <script src="js/include.js" defer></script>
   </head>
 
   <body>
     <div data-include="components/header.html"></div>
 
-    <!-- Loading -->
     <div id="pq-loading">
       <div id="pq-loading-center">
         <img style="scale: 1.5" src="images/Logo/logo-4.png" alt="Loading" />
       </div>
     </div>
-    <!-- Loading -->
-    <!-- Breadcrumb -->
+
     <div class="pq-breadcrumb">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-12">
             <nav aria-label="breadcrumb">
               <div class="pq-breadcrumb-title">
-                <h1>Finishes</h1>
+                <h1 id="breadcrumb-title">Finishes</h1>
               </div>
               <div class="pq-breadcrumb-container">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="index.html">
+                    <a href="index.html" id="breadcrumb-home">
                       <i class="fas fa-home me-2"></i>Home
                     </a>
                   </li>
-                  <li class="breadcrumb-item active">Finishes</li>
+                  <li class="breadcrumb-item active" id="breadcrumb-current">Finishes</li>
                 </ol>
               </div>
             </nav>
@@ -121,799 +96,807 @@
         </div>
       </div>
     </div>
-    <!-- Breadcrumb -->
 
     <section class="finishes">
       <div class="container">
-        <div  class="row">
+        <div class="row">
           <div class="col-lg-12">
             <div class="pq-section-title pq-style-1 text-center">
-              <span class="pq-section-sub-title">Finishes</span>
-              <h5 class="pq-section-main-title">Explore Our Finishes</h5>
+              <span class="pq-section-sub-title" id="finishes-sub-title">Finishes</span>
+              <h5 class="pq-section-main-title" id="finishes-main-title">Explore Our Finishes</h5>
             </div>
           </div>
         </div>
         <div style="row-gap:50px;" class="row">
 
-        <!-- Saw-Cut Section -->
-        <div class="col-lg-4 col-md-6 mt-4">
-          <h3 class="text-center pb-5">Saw-Cut</h3>
-          <div
-          style="overflow: hidden;"
-          class="swiper-container saw-cut-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/saw cut/1.jpg"
-                  alt="Saw-Cut Finish"
-                  class="img-fluid"
-                />
+          <!-- Saw-Cut Section -->
+          <div class="col-lg-4 col-md-6 mt-4">
+            <h3 class="text-center pb-5" id="saw-cut-title">Saw-Cut</h3>
+            <div
+            style="overflow: hidden;"
+            class="swiper-container saw-cut-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/saw cut/1.jpg"
+                    alt="Saw-Cut Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/saw cut/2.jpeg"
+                    alt="Saw-Cut Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/saw cut/3.jpg"
+                    alt="Saw-Cut Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/saw cut/4.jpg"
+                    alt="Saw-Cut Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/saw cut/4.webp"
+                    alt="Saw-Cut Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/saw cut/5.jpg"
+                    alt="Saw-Cut Finish"
+                    class="img-fluid"
+                  />
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/saw cut/2.jpeg"
-                  alt="Saw-Cut Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/saw cut/3.jpg"
-                  alt="Saw-Cut Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/saw cut/4.jpg"
-                  alt="Saw-Cut Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/saw cut/4.webp"
-                  alt="Saw-Cut Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/saw cut/5.jpg"
-                  alt="Saw-Cut Finish"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div class="swiper-button-next saw-cut-next"></div>
-            <div class="swiper-button-prev saw-cut-prev"></div>
-            <div class="swiper-pagination saw-cut-pagination"></div>
-          </div>
-        </div>
-  
-        <!-- Polished Section -->
-        <div class="col-lg-4 col-md-6 mt-4">
-          <h3 class="text-center pb-5">Polished</h3>
-          <div class="swiper-container polished-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/1.jpg"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/2.gif"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/3.jpg"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/4.jpg"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/5.jpeg"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/6.jpeg"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/7.jpg"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/polished/8.webp"
-                  alt="Polished Finish"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div class="swiper-button-next polished-next"></div>
-            <div class="swiper-button-prev polished-prev"></div>
-            <div class="swiper-pagination polished-pagination"></div>
-          </div>
-        </div> 
-  
-        <!-- Honed Section -->
-        <div class="col-lg-4 col-md-6 mt-4">
-          <h3 class="text-center pb-5">Honed</h3>
-          <div class="swiper-container honed-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/hond/1.webp"
-                  alt="Honed Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/hond/2.png"
-                  alt="Honed Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/hond/3.jpg"
-                  alt="Honed Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/hond/4.jpg"
-                  alt="Honed Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/hond/5.jpg"
-                  alt="Honed Finish"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/pics/finishes/hond/8.webp"
-                  alt="Honed Finish"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-            <div class="swiper-button-next honed-next"></div>
-            <div class="swiper-button-prev honed-prev"></div>
-            <div class="swiper-pagination honed-pagination"></div>
-          </div>
-        </div> 
-     
-      <!-- Brushed Section -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <h3 class="text-center pb-5">Brushed</h3>
-        <div class="swiper-container brushed-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/bruched/1.jpg"
-                alt="Brushed Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/bruched/2.jpg"
-                alt="Brushed Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/bruched/3.webp"
-                alt="Brushed Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/bruched/4.jpg"
-                alt="Brushed Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/bruched/5.jpg"
-                alt="Brushed Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/bruched/6.webp"
-                alt="Brushed Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/bruched/7.jpg"
-                alt="Brushed Finish 1"
-              />
-            </div>
-            
-          </div>
-          <!-- Navigation -->
-          <div class="swiper-button-next brushed-next"></div>
-          <div class="swiper-button-prev brushed-prev"></div>
-          <!-- Pagination -->
-          <div class="swiper-pagination brushed-pagination"></div>
-        </div>
-      </div>
-
-      <!-- Bush Hammered Section -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <h3 class="text-center pb-5">Bush Hammered</h3>
-        <div class="swiper-container bush-hammered-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/hamerd/1.jpg"
-                alt="Bush Hammered Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/hamerd/2.webp"
-                alt="Bush Hammered Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/hamerd/3.webp"
-                alt="Bush Hammered Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/hamerd/4.jpg"
-                alt="Bush Hammered Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/hamerd/5.webp"
-                alt="Bush Hammered Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/hamerd/6.webp"
-                alt="Bush Hammered Finish 1"
-              />
-            </div>
-            
-          </div>
-          <!-- Navigation -->
-          <div class="swiper-button-next bush-hammered-next"></div>
-          <div class="swiper-button-prev bush-hammered-prev"></div>
-          <!-- Pagination -->
-          <div class="swiper-pagination bush-hammered-pagination"></div>
-        </div>
-      </div>
-
-      <!-- Acid Wash Section -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <h3 class="text-center pb-5">Acid Wash</h3>
-        <div class="swiper-container acid-wash-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/acid/1.webp"
-                alt="Acid Wash Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/acid/2.jpg"
-                alt="Acid Wash Finish 1"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="images/pics/finishes/acid/3.jpg"
-                alt="Acid Wash Finish 1"
-              />
+              <div class="swiper-button-next saw-cut-next"></div>
+              <div class="swiper-button-prev saw-cut-prev"></div>
+              <div class="swiper-pagination saw-cut-pagination"></div>
             </div>
           </div>
-          <!-- Navigation -->
-          <div class="swiper-button-next acid-wash-next"></div>
-          <div class="swiper-button-prev acid-wash-prev"></div>
-          <!-- Pagination -->
-          <div class="swiper-pagination acid-wash-pagination"></div>
-        </div>
-      </div>
-      <!-- Scratch Section -->
-<div class="col-lg-4 col-md-6 mb-4">
-  <h3 class="text-center pb-5">Scratch</h3>
-  <div class="swiper-container scratch-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/scratch/1.jpg"
-          alt="Scratch Finish For Sunny Menia"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/scratch/2.jpg"
-          alt="Scratch Finish For Sinai Pearl Gray"
-        />
-      </div>
-
-    </div>
-    <!-- Navigation -->
-    <div class="swiper-button-next scratch-next"></div>
-    <div class="swiper-button-prev scratch-prev"></div>
-    <!-- Pagination -->
-    <div class="swiper-pagination scratch-pagination"></div>
-  </div>
-</div>
-
-<!-- Tumbled Section -->
-<div class="col-lg-4 col-md-6 mb-4">
-  <h3 class="text-center pb-5">Tumbled</h3>
-  <div class="swiper-container tumbled-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/trambel/1.jpeg"
-          alt="Sunny Menia Tumbled Finish"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/trambel/2.jpg"
-          alt="Sunny Menia Tumbled Finish"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/trambel/3.jpg"
-          alt="Sunny Tumbled Finish"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/trambel/4.jpg"
-          alt="Sunny Tumbled Finish"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/trambel/5.jpg"
-          alt="Sunny Tumbled Finish"
-        />
-      </div>
-    </div>
-    <!-- Navigation -->
-    <div class="swiper-button-next tumbled-next"></div>
-    <div class="swiper-button-prev tumbled-prev"></div>
-    <!-- Pagination -->
-    <div class="swiper-pagination tumbled-pagination"></div>
-  </div>
-</div>
-
-<!-- Stripped Section -->
-<div class="col-lg-4 col-md-6 mb-4">
-  <h3 class="text-center pb-5">Stripped</h3>
-  <div class="swiper-container stripped-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/striped/1.webp"
-          alt="Striped Tiles Finish"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/striped/2.jpg"
-          alt="Striped Tiles Finish"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/striped/3.png"
-          alt="Striped Tiles Finish"
-        />
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="images/pics/finishes/striped/4.jpg"
-          alt="Striped Tiles Finish"
-        />
-      </div>
-    </div>
-    <!-- Navigation -->
-    <div class="swiper-button-next stripped-next"></div>
-    <div class="swiper-button-prev stripped-prev"></div>
-    <!-- Pagination -->
-    <div class="swiper-pagination stripped-pagination"></div>
-  </div>
-</div>
-<!-- Flamed Section -->
-<div class="col-lg-4 col-md-6 mb-4">
-  <h3 class="text-center pb-5">Flamed</h3>
-  <div class="swiper-container flamed-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/flamed/1.jpeg" alt="Flamed Tiles Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/flamed/2.jpg" alt="Flamed Tiles Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/flamed/3.webp" alt="Flamed Tiles Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/flamed/4.jpg" alt="Flamed Tiles Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/flamed/6.jpg" alt="Flamed Tiles Finish" />
-      </div>
-    </div>
-    <!-- Navigation -->
-    <div class="swiper-button-next flamed-next"></div>
-    <div class="swiper-button-prev flamed-prev"></div>
-    <!-- Pagination -->
-    <div class="swiper-pagination flamed-pagination"></div>
-  </div>
-</div>
-
-<!-- Sandblasted Section -->
-<div class="col-lg-4 col-md-6 mb-4">
-  <h3 class="text-center pb-5">Sandblasted</h3>
-  <div class="swiper-container sandblasted-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/sandblasted/1.jpg" alt="Sandblasted Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/sandblasted/2.webp" alt="Sandblasted Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/sandblasted/3.jpg" alt="Sandblasted Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/sandblasted/4.jpg" alt="Sandblasted Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/sandblasted/5.jpg" alt="Sandblasted Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/sandblasted/6.webp" alt="Sandblasted Finish" />
-      </div>
-    </div>
-    <!-- Navigation -->
-    <div class="swiper-button-next sandblasted-next"></div>
-    <div class="swiper-button-prev sandblasted-prev"></div>
-    <!-- Pagination -->
-    <div class="swiper-pagination sandblasted-pagination"></div>
-  </div>
-</div>
-
-<!-- Split Face Section -->
-<div class="col-lg-4 col-md-6 mb-4">
-  <h3 class="text-center pb-5">Split Face</h3>
-  <div class="swiper-container split-face-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/1.jpeg" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/2.jpg" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/3.jpeg" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/4.webp" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/5.webp" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/6.jpg" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/7.jpg" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/8.jpg" alt="Split Face Finish" />
-      </div>
-      <div class="swiper-slide">
-        <img src="images/pics/finishes/split-face/9.jpg" alt="Split Face Finish" />
-      </div>
-      
-    </div>
-    <!-- Navigation -->
-    <div class="swiper-button-next split-face-next"></div>
-    <div class="swiper-button-prev split-face-prev"></div>
-    <!-- Pagination -->
-    <div class="swiper-pagination split-face-pagination"></div>
-  </div>
-</div>
-
-
-    </div>
-  </div>
-    </section>
     
-    <!-- Include Swiper CSS and JavaScript -->
+          <!-- Polished Section -->
+          <div class="col-lg-4 col-md-6 mt-4">
+            <h3 class="text-center pb-5" id="polished-title">Polished</h3>
+            <div class="swiper-container polished-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/1.jpg"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/2.gif"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/3.jpg"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/4.jpg"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/5.jpeg"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/6.jpeg"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/7.jpg"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/polished/8.webp"
+                    alt="Polished Finish"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next polished-next"></div>
+              <div class="swiper-button-prev polished-prev"></div>
+              <div class="swiper-pagination polished-pagination"></div>
+            </div>
+          </div> 
+    
+          <!-- Honed Section -->
+          <div class="col-lg-4 col-md-6 mt-4">
+            <h3 class="text-center pb-5" id="honed-title">Honed</h3>
+            <div class="swiper-container honed-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/hond/1.webp"
+                    alt="Honed Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/hond/2.png"
+                    alt="Honed Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/hond/3.jpg"
+                    alt="Honed Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/hond/4.jpg"
+                    alt="Honed Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/hond/5.jpg"
+                    alt="Honed Finish"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/pics/finishes/hond/8.webp"
+                    alt="Honed Finish"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next honed-next"></div>
+              <div class="swiper-button-prev honed-prev"></div>
+              <div class="swiper-pagination honed-pagination"></div>
+            </div>
+          </div> 
+       
+        <!-- Brushed Section -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h3 class="text-center pb-5" id="brushed-title">Brushed</h3>
+          <div class="swiper-container brushed-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/bruched/1.jpg"
+                  alt="Brushed Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/bruched/2.jpg"
+                  alt="Brushed Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/bruched/3.webp"
+                  alt="Brushed Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/bruched/4.jpg"
+                  alt="Brushed Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/bruched/5.jpg"
+                  alt="Brushed Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/bruched/6.webp"
+                  alt="Brushed Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/bruched/7.jpg"
+                  alt="Brushed Finish 1"
+                />
+              </div>
+              
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-button-next brushed-next"></div>
+            <div class="swiper-button-prev brushed-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination brushed-pagination"></div>
+          </div>
+        </div>
+  
+        <!-- Bush Hammered Section -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h3 class="text-center pb-5" id="bush-hammered-title">Bush Hammered</h3>
+          <div class="swiper-container bush-hammered-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/hamerd/1.jpg"
+                  alt="Bush Hammered Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/hamerd/2.webp"
+                  alt="Bush Hammered Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/hamerd/3.webp"
+                  alt="Bush Hammered Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/hamerd/4.jpg"
+                  alt="Bush Hammered Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/hamerd/5.webp"
+                  alt="Bush Hammered Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/hamerd/6.webp"
+                  alt="Bush Hammered Finish 1"
+                />
+              </div>
+              
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-button-next bush-hammered-next"></div>
+            <div class="swiper-button-prev bush-hammered-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination bush-hammered-pagination"></div>
+          </div>
+        </div>
+  
+        <!-- Acid Wash Section -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h3 class="text-center pb-5" id="acid-wash-title">Acid Wash</h3>
+          <div class="swiper-container acid-wash-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/acid/1.webp"
+                  alt="Acid Wash Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/acid/2.jpg"
+                  alt="Acid Wash Finish 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/pics/finishes/acid/3.jpg"
+                  alt="Acid Wash Finish 1"
+                />
+              </div>
+            </div>
+            <!-- Navigation -->
+            <div class="swiper-button-next acid-wash-next"></div>
+            <div class="swiper-button-prev acid-wash-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination acid-wash-pagination"></div>
+          </div>
+        </div>
+        <!-- Scratch Section -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <h3 class="text-center pb-5" id="scratch-title">Scratch</h3>
+    <div class="swiper-container scratch-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/scratch/1.jpg"
+            alt="Scratch Finish For Sunny Menia"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/scratch/2.jpg"
+            alt="Scratch Finish For Sinai Pearl Gray"
+          />
+        </div>
+  
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-next scratch-next"></div>
+      <div class="swiper-button-prev scratch-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination scratch-pagination"></div>
+    </div>
+  </div>
+  
+  <!-- Tumbled Section -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <h3 class="text-center pb-5" id="tumbled-title">Tumbled</h3>
+    <div class="swiper-container tumbled-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/trambel/1.jpeg"
+            alt="Sunny Menia Tumbled Finish"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/trambel/2.jpg"
+            alt="Sunny Menia Tumbled Finish"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/trambel/3.jpg"
+            alt="Sunny Tumbled Finish"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/trambel/4.jpg"
+            alt="Sunny Tumbled Finish"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/trambel/5.jpg"
+            alt="Sunny Tumbled Finish"
+          />
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-next tumbled-next"></div>
+      <div class="swiper-button-prev tumbled-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination tumbled-pagination"></div>
+    </div>
+  </div>
+  
+  <!-- Stripped Section -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <h3 class="text-center pb-5" id="stripped-title">Stripped</h3>
+    <div class="swiper-container stripped-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/striped/1.webp"
+            alt="Striped Tiles Finish"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/striped/2.jpg"
+            alt="Striped Tiles Finish"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/striped/3.png"
+            alt="Striped Tiles Finish"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/pics/finishes/striped/4.jpg"
+            alt="Striped Tiles Finish"
+          />
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-next stripped-next"></div>
+      <div class="swiper-button-prev stripped-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination stripped-pagination"></div>
+    </div>
+  </div>
+  <!-- Flamed Section -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <h3 class="text-center pb-5" id="flamed-title">Flamed</h3>
+    <div class="swiper-container flamed-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/flamed/1.jpeg" alt="Flamed Tiles Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/flamed/2.jpg" alt="Flamed Tiles Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/flamed/3.webp" alt="Flamed Tiles Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/flamed/4.jpg" alt="Flamed Tiles Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/flamed/6.jpg" alt="Flamed Tiles Finish" />
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-next flamed-next"></div>
+      <div class="swiper-button-prev flamed-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination flamed-pagination"></div>
+    </div>
+  </div>
+  
+  <!-- Sandblasted Section -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <h3 class="text-center pb-5" id="sandblasted-title">Sandblasted</h3>
+    <div class="swiper-container sandblasted-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/sandblasted/1.jpg" alt="Sandblasted Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/sandblasted/2.webp" alt="Sandblasted Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/sandblasted/3.jpg" alt="Sandblasted Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/sandblasted/4.jpg" alt="Sandblasted Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/sandblasted/5.jpg" alt="Sandblasted Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/sandblasted/6.webp" alt="Sandblasted Finish" />
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-next sandblasted-next"></div>
+      <div class="swiper-button-prev sandblasted-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination sandblasted-pagination"></div>
+    </div>
+  </div>
+  
+  <!-- Split Face Section -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <h3 class="text-center pb-5" id="split-face-title">Split Face</h3>
+    <div class="swiper-container split-face-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/1.jpeg" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/2.jpg" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/3.jpeg" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/4.webp" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/5.webp" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/6.jpg" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/7.jpg" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/8.jpg" alt="Split Face Finish" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/pics/finishes/split-face/9.jpg" alt="Split Face Finish" />
+        </div>
+        
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-next split-face-next"></div>
+      <div class="swiper-button-prev split-face-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination split-face-pagination"></div>
+    </div>
+  </div>
+  
+  
+      </div>
+    </div>
+      </section>
+      
+      <!-- Include Swiper CSS and JavaScript -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      
+      <script>
+        // Initialize Swiper for Saw-Cut
+        var sawCutSwiper = new Swiper('.saw-cut-slider', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.saw-cut-next',
+            prevEl: '.saw-cut-prev',
+          },
+          pagination: {
+            el: '.saw-cut-pagination',
+            clickable: true,
+          },
+          loop: true,
+        });
+      
+        // Initialize Swiper for Polished
+        var polishedSwiper = new Swiper('.polished-slider', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.polished-next',
+            prevEl: '.polished-prev',
+          },
+          pagination: {
+            el: '.polished-pagination',
+            clickable: true,
+          },
+          loop: true,
+        });
+      
+        // Initialize Swiper for Honed
+        var honedSwiper = new Swiper('.honed-slider', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.honed-next',
+            prevEl: '.honed-prev',
+          },
+          pagination: {
+            el: '.honed-pagination',
+            clickable: true,
+          },
+          loop: true,
+        });
+  
+  
+        // Brushed Slider
+        var brushedSlider = new Swiper(".brushed-slider", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".brushed-next",
+            prevEl: ".brushed-prev",
+          },
+          pagination: {
+            el: ".brushed-pagination",
+            clickable: true,
+          },
+          loop: true,
+        });
+  
+        // Bush Hammered Slider
+        var bushHammeredSlider = new Swiper(".bush-hammered-slider", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".bush-hammered-next",
+            prevEl: ".bush-hammered-prev",
+          },
+          pagination: {
+            el: ".bush-hammered-pagination",
+            clickable: true,
+          },
+          loop: true,
+        });
+  
+        // Acid Wash Slider
+        var acidWashSlider = new Swiper(".acid-wash-slider", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".acid-wash-next",
+            prevEl: ".acid-wash-prev",
+          },
+          pagination: {
+            el: ".acid-wash-pagination",
+            clickable: true,
+          },
+          loop: true,
+        });
+  
+        // Scratch Slider
+  var scratchSlider = new Swiper(".scratch-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".scratch-next",
+      prevEl: ".scratch-prev",
+    },
+    pagination: {
+      el: ".scratch-pagination",
+      clickable: true,
+    },
+    loop: true,
+  });
+  
+  // Tumbled Slider
+  var tumbledSlider = new Swiper(".tumbled-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".tumbled-next",
+      prevEl: ".tumbled-prev",
+    },
+    pagination: {
+      el: ".tumbled-pagination",
+      clickable: true,
+    },
+    loop: true,
+  });
+  
+  // Stripped Slider
+  var strippedSlider = new Swiper(".stripped-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".stripped-next",
+      prevEl: ".stripped-prev",
+    },
+    pagination: {
+      el: ".stripped-pagination",
+      clickable: true,
+    },
+    loop: true,
+  });
+  // Flamed Slider
+  var flamedSlider = new Swiper(".flamed-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".flamed-next",
+      prevEl: ".flamed-prev",
+    },
+    pagination: {
+      el: ".flamed-pagination",
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 600,
+  });
+  
+  // Sandblasted Slider
+  var sandblastedSlider = new Swiper(".sandblasted-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".sandblasted-next",
+      prevEl: ".sandblasted-prev",
+    },
+    pagination: {
+      el: ".sandblasted-pagination",
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 600,
+  });
+  
+  // Split Face Slider
+  var splitFaceSlider = new Swiper(".split-face-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".split-face-next",
+      prevEl: ".split-face-prev",
+    },
+    pagination: {
+      el: ".split-face-pagination",
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 600,
+  });
+  
+  
+      </script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    
+
     <script>
-      // Initialize Swiper for Saw-Cut
-      var sawCutSwiper = new Swiper('.saw-cut-slider', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.saw-cut-next',
-          prevEl: '.saw-cut-prev',
-        },
-        pagination: {
-          el: '.saw-cut-pagination',
-          clickable: true,
-        },
-        loop: true,
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get("lang") || "en";
+
+        fetch("finishes.json")
+          .then((response) => {
+            if (!response.ok) throw new Error("Failed to load translations.");
+            return response.json();
+          })
+          .then((translations) => {
+            const content = translations[lang] || translations["en"];
+
+            document.title = content.title;
+            document.getElementById("page-title").textContent = content.title;
+            document.getElementById("breadcrumb-title").textContent =
+              content.breadcrumb.current;
+            document.getElementById("breadcrumb-home").textContent =
+              content.breadcrumb.home;
+            document.getElementById("breadcrumb-current").textContent =
+              content.breadcrumb.current;
+            document.getElementById("finishes-sub-title").textContent =
+              content.sections.finishesTitle;
+            document.getElementById("finishes-main-title").textContent =
+              content.sections.finishesSubTitle;
+            for (const [id, title] of Object.entries(content.sections.categories)) {
+              const element = document.getElementById(`${id}-title`);
+              if (element) element.textContent = title;
+            }
+          })
+          .catch((error) => console.error("Error loading or applying translations:", error));
       });
-    
-      // Initialize Swiper for Polished
-      var polishedSwiper = new Swiper('.polished-slider', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.polished-next',
-          prevEl: '.polished-prev',
-        },
-        pagination: {
-          el: '.polished-pagination',
-          clickable: true,
-        },
-        loop: true,
-      });
-    
-      // Initialize Swiper for Honed
-      var honedSwiper = new Swiper('.honed-slider', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.honed-next',
-          prevEl: '.honed-prev',
-        },
-        pagination: {
-          el: '.honed-pagination',
-          clickable: true,
-        },
-        loop: true,
-      });
-
-
-      // Brushed Slider
-      var brushedSlider = new Swiper(".brushed-slider", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".brushed-next",
-          prevEl: ".brushed-prev",
-        },
-        pagination: {
-          el: ".brushed-pagination",
-          clickable: true,
-        },
-        loop: true,
-      });
-
-      // Bush Hammered Slider
-      var bushHammeredSlider = new Swiper(".bush-hammered-slider", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".bush-hammered-next",
-          prevEl: ".bush-hammered-prev",
-        },
-        pagination: {
-          el: ".bush-hammered-pagination",
-          clickable: true,
-        },
-        loop: true,
-      });
-
-      // Acid Wash Slider
-      var acidWashSlider = new Swiper(".acid-wash-slider", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".acid-wash-next",
-          prevEl: ".acid-wash-prev",
-        },
-        pagination: {
-          el: ".acid-wash-pagination",
-          clickable: true,
-        },
-        loop: true,
-      });
-
-      // Scratch Slider
-var scratchSlider = new Swiper(".scratch-slider", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".scratch-next",
-    prevEl: ".scratch-prev",
-  },
-  pagination: {
-    el: ".scratch-pagination",
-    clickable: true,
-  },
-  loop: true,
-});
-
-// Tumbled Slider
-var tumbledSlider = new Swiper(".tumbled-slider", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".tumbled-next",
-    prevEl: ".tumbled-prev",
-  },
-  pagination: {
-    el: ".tumbled-pagination",
-    clickable: true,
-  },
-  loop: true,
-});
-
-// Stripped Slider
-var strippedSlider = new Swiper(".stripped-slider", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".stripped-next",
-    prevEl: ".stripped-prev",
-  },
-  pagination: {
-    el: ".stripped-pagination",
-    clickable: true,
-  },
-  loop: true,
-});
-// Flamed Slider
-var flamedSlider = new Swiper(".flamed-slider", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".flamed-next",
-    prevEl: ".flamed-prev",
-  },
-  pagination: {
-    el: ".flamed-pagination",
-    clickable: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  speed: 600,
-});
-
-// Sandblasted Slider
-var sandblastedSlider = new Swiper(".sandblasted-slider", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".sandblasted-next",
-    prevEl: ".sandblasted-prev",
-  },
-  pagination: {
-    el: ".sandblasted-pagination",
-    clickable: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  speed: 600,
-});
-
-// Split Face Slider
-var splitFaceSlider = new Swiper(".split-face-slider", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".split-face-next",
-    prevEl: ".split-face-prev",
-  },
-  pagination: {
-    el: ".split-face-pagination",
-    clickable: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  speed: 600,
-});
-
-
     </script>
-    
-    
-    
-
-    
 
     <div data-include="components/footer.html"></div>
-
-        <!-- Jquery -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Owl Carousel -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- Isotope -->
-        <script src="js/isotope.pkgd.min.js"></script>
-        <!-- Counter -->
-        <script src="js/jquery.countTo.min.js"></script>
-        <!-- Wow -->
-        <script src="js/wow.min.js"></script>
-        <!-- Magnefic Popup -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- Custom Scrollbar -->
-        <script src="js/jquery.mCustomScrollbar.min.js"></script>
-        <!-- Custom -->
-        <script src="js/custom.js"></script>
-      </body>
-    
-      <script>
-        "undefined" === typeof _trfq || (window._trfq = []);
-        "undefined" === typeof _trfd && (window._trfd = []),
-          _trfd.push(
-            { "tccl.baseHost": "secureserver.net" },
-            { ap: "cpbh-mt" },
-            { server: "sg2plmcpnl492384" },
-            { dcenter: "sg2" },
-            { cp_id: "9858662" },
-            { cp_cache: "" },
-            { cp_cl: "8" }
-          ); // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
-      </script>
-      <script src="../../../../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js"></script>
-    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.countTo.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

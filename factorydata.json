@@ -1,0 +1,51 @@
+{
+    "en": {
+      "title": "King Stone - Factory & Quarry",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Factory & Quarry"
+      },
+      "heading": "Factory & Quarry",
+      "gallery": {
+        "subTitle": "Our Factory",
+        "mainTitle": "Explore Our Factory"
+      }
+    },
+    "ar": {
+      "title": "كينج ستون - المصنع والمحجر",
+      "breadcrumb": {
+        "home": "الرئيسية",
+        "current": "المصنع والمحجر"
+      },
+      "heading": "المصنع والمحجر",
+      "gallery": {
+        "subTitle": "مصنعنا",
+        "mainTitle": "استكشف مصنعنا"
+      }
+    },
+    "fr": {
+      "title": "King Stone - Usine et Carrière",
+      "breadcrumb": {
+        "home": "Accueil",
+        "current": "Usine et Carrière"
+      },
+      "heading": "Usine et Carrière",
+      "gallery": {
+        "subTitle": "Notre Usine",
+        "mainTitle": "Explorez Notre Usine"
+      }
+    },
+    "pt": {
+      "title": "King Stone - Fábrica e Pedreira",
+      "breadcrumb": {
+        "home": "Início",
+        "current": "Fábrica e Pedreira"
+      },
+      "heading": "Fábrica e Pedreira",
+      "gallery": {
+        "subTitle": "Nossa Fábrica",
+        "mainTitle": "Explore Nossa Fábrica"
+      }
+    }
+  }
+  

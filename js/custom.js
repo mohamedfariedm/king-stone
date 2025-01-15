@@ -379,3 +379,130 @@ Design and Developed by: PeacefulQode
     });
   });
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const includes = document.querySelectorAll("[data-include]");
+
+  includes.forEach(el => {
+    const file = el.getAttribute("data-include");
+    if (file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Failed to fetch ${file}: ${response.statusText}`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          el.innerHTML = data;
+
+          // Initialize scripts for dynamically loaded content
+          if (file.includes("header.html")) {
+            if (typeof initializeLanguageSwitcher === "function") {
+              initializeLanguageSwitcher();
+            } else {
+              console.warn("initializeLanguageSwitcher function is not defined.");
+            }
+          }
+        })
+        .catch(error => console.error("Error loading include:", error));
+    }
+  });
+});
+function initializeLanguageSwitcher() {
+  const locales = [
+    { code: "en", name: "English", flag: "us", direction: "ltr" },
+    { code: "ar", name: "Arabic", flag: "sa", direction: "rtl" },
+    { code: "fr", name: "French", flag: "fr", direction: "ltr" },
+    { code: "pt", name: "Portuguese", flag: "pt", direction: "ltr" },
+  ];
+
+  function getFlagSrc(countryCode) {
+    return `https://flagsapi.com/${countryCode.toUpperCase()}/shiny/64.png`;
+  }
+
+  function updateNavLinks(locale) {
+    const links = document.querySelectorAll("#pq-main-menu a[href]");
+    links.forEach(link => {
+      const url = new URL(link.href, window.location.origin);
+      url.searchParams.set("lang", locale);
+      link.href = url.toString();
+    });
+  }
+
+  const dropdownBtn = document.getElementById("dropdown-btn");
+  const dropdownContent = document.getElementById("dropdown-content");
+
+  if (!dropdownBtn || !dropdownContent) {
+    console.error("Dropdown elements not found.");
+    return;
+  }
+
+  function setSelectedLocale(localeCode) {
+    const selectedLocale = locales.find(locale => locale.code === localeCode);
+    if (!selectedLocale) return;
+
+    // Update dropdown button with the selected locale
+    dropdownBtn.innerHTML = `
+      <img src="${getFlagSrc(selectedLocale.flag)}" alt="${selectedLocale.name}" style="width: 20px; margin-right: 8px;" />
+      ${selectedLocale.name}
+      <span class="arrow-down"></span>
+    `;
+
+    // Update navigation links with the selected locale
+    updateNavLinks(localeCode);
+
+    // Set document direction based on the selected locale
+    document.documentElement.dir = selectedLocale.direction;
+
+    // Populate the dropdown content with the other locales
+    dropdownContent.innerHTML = "";
+    locales.forEach(locale => {
+      if (locale.code !== localeCode) {
+        const listEl = document.createElement("li");
+        listEl.style.cursor = "pointer";
+        listEl.innerHTML = `
+          <img src="${getFlagSrc(locale.flag)}" alt="${locale.name}" style="width: 20px; margin-right: 8px;" />
+          ${locale.name}
+        `;
+
+        listEl.addEventListener("click", () => {
+          // Reload page with updated language in URL
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", locale.code);
+          window.location.href = url.toString();
+        });
+
+        dropdownContent.appendChild(listEl);
+      }
+    });
+  }
+
+  // Get the language from the URL or fall back to default
+  const urlParams = new URLSearchParams(window.location.search);
+  const langFromUrl = urlParams.get("lang");
+  const initialLocale = locales.find(locale => locale.code === langFromUrl)?.code || locales[0].code;
+
+  // Initialize dropdown with language from URL or default
+  setSelectedLocale(initialLocale);
+
+  // Toggle dropdown visibility
+  dropdownBtn.addEventListener("click", event => {
+    event.stopPropagation();
+    dropdownContent.classList.toggle("show");
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", () => {
+    dropdownContent.classList.remove("show");
+  });
+}
+
+
+
+
+
+
+
+
+

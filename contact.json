@@ -1,0 +1,104 @@
+{
+    "en": {
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Contact Us"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "getInTouch": "Get in touch with us",
+        "description": "King Stone Marble & Granite is a leading provider of premium marble and granite, offering a wide range of exquisite designs and types to suit all your needs. With an unwavering commitment to quality and craftsmanship, we take pride in transforming natural stone into timeless works of art. Our extensive collection features diverse patterns, colors, and finishes, perfect for enhancing residential, commercial, and industrial spaces.",
+        "visitOffice": "Visit A Office",
+        "officeAddress": "King Stone, Cairo, Egypt",
+        "contactUs": "Contact-Us",
+        "phoneNumber": "+201271823154",
+        "emailUs": "Email-Us",
+        "emailAddress": "info@kingstone-eg.com",
+        "helpTitle": "How Can We Help You ?",
+        "helpDescription": "Please feel free to get in touch using the form below. We’d love to hear from you.",
+        "namePlaceholder": "Your Name",
+        "emailPlaceholder": "Email",
+        "phonePlaceholder": "Phone Number",
+        "scopePlaceholder": "Project Scope",
+        "messagePlaceholder": "Write Your Message",
+        "sendNow": "SEND NOW"
+      }
+    },
+    "ar": {
+      "breadcrumb": {
+        "home": "الصفحة الرئيسية",
+        "current": "اتصل بنا"
+      },
+      "contact": {
+        "title": "اتصل بنا",
+        "getInTouch": "تواصل معنا",
+"description": "كينج ستون للرخام والجرانيت هي واحدة من الشركات الرائدة في توفير الرخام والجرانيت الفاخر، حيث نقدم مجموعة واسعة من التصاميم والأنواع الرائعة لتلبية جميع احتياجاتك. مع التزام لا يتزعزع بالجودة والحرفية، نفخر بتحويل الأحجار الطبيعية إلى أعمال فنية خالدة. تتميز مجموعتنا الواسعة بأنماط وألوان وتشطيبات متنوعة، مثالية لتحسين المساحات السكنية والتجارية والصناعية.",
+        "visitOffice": "قم بزيارة المكتب",
+        "officeAddress": "كينج ستون، القاهرة، مصر",
+        "contactUs": "اتصل بنا",
+        "phoneNumber": "+201271823154",
+        "emailUs": "راسلنا عبر البريد الإلكتروني",
+        "emailAddress": "info@kingstone-eg.com",
+        "helpTitle": "كيف يمكننا مساعدتك؟",
+        "helpDescription": "يرجى الشعور بالراحة في التواصل معنا باستخدام النموذج أدناه. نحن نحب أن نسمع منك.",
+        "namePlaceholder": "اسمك",
+        "emailPlaceholder": "البريد الإلكتروني",
+        "phonePlaceholder": "رقم الهاتف",
+        "scopePlaceholder": "نطاق المشروع",
+        "messagePlaceholder": "اكتب رسالتك",
+        "sendNow": "ارسل الآن"
+      }
+    },
+    "fr": {
+      "breadcrumb": {
+        "home": "Accueil",
+        "current": "Contactez Nous"
+      },
+      "contact": {
+        "title": "Contactez Nous",
+        "getInTouch": "Prenez contact avec nous",
+"description": "King Stone Marble & Granite est un fournisseur de premier plan de marbre et de granit de qualité supérieure, offrant une large gamme de designs et de types exquis pour répondre à tous vos besoins. Avec un engagement indéfectible envers la qualité et l'artisanat, nous sommes fiers de transformer la pierre naturelle en œuvres d'art intemporelles. Notre vaste collection propose des motifs, des couleurs et des finitions variés, parfaits pour améliorer les espaces résidentiels, commerciaux et industriels."
+,        "visitOffice": "Visitez Un Bureau",
+        "officeAddress": "King Stone, Le Caire, Égypte",
+        "contactUs": "Contactez-Nous",
+        "phoneNumber": "+201271823154",
+        "emailUs": "Emailez-Nous",
+        "emailAddress": "info@kingstone-eg.com",
+        "helpTitle": "Comment Pouvons-Nous Vous Aider ?",
+        "helpDescription": "N'hésitez pas à nous contacter en utilisant le formulaire ci-dessous. Nous serions ravis de vous entendre.",
+        "namePlaceholder": "Votre Nom",
+        "emailPlaceholder": "Email",
+        "phonePlaceholder": "Numéro de Téléphone",
+        "scopePlaceholder": "Portée du Projet",
+        "messagePlaceholder": "Écrivez Votre Message",
+        "sendNow": "ENVOYER MAINTENANT"
+      }
+    },
+    "pt": {
+      "breadcrumb": {
+        "home": "Início",
+        "current": "Contate-Nos"
+      },
+      "contact": {
+        "title": "Contate-Nos",
+        "getInTouch": "Entre em contato conosco",
+"description": "A King Stone Marble & Granite é um fornecedor líder de mármore e granito premium, oferecendo uma ampla gama de designs e tipos requintados para atender a todas as suas necessidades. Com um compromisso inabalável com a qualidade e o artesanato, temos orgulho em transformar pedras naturais em obras de arte atemporais. Nossa ampla coleção apresenta padrões, cores e acabamentos diversificados, perfeitos para aprimorar espaços residenciais, comerciais e industriais."
+,        "visitOffice": "Visite Um Escritório",
+        "officeAddress": "King Stone, Cairo, Egito",
+        "contactUs": "Contate-Nos",
+        "phoneNumber": "+201271823154",
+        "emailUs": "Envie-nos um Email",
+        "emailAddress": "info@kingstone-eg.com",
+        "helpTitle": "Como Podemos Ajudar Você ?",
+        "helpDescription": "Sinta-se à vontade para entrar em contato usando o formulário abaixo. Adoraríamos ouvir você.",
+        "namePlaceholder": "Seu Nome",
+        "emailPlaceholder": "Email",
+        "phonePlaceholder": "Número de Telefone",
+        "scopePlaceholder": "Escopo do Projeto",
+        "messagePlaceholder": "Escreva Sua Mensagem",
+        "sendNow": "ENVIAR AGORA"
+      }
+    }
+  }
+
+

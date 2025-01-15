@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>King Stone - Our Projects</title>
+    <title id="page-title">King Stone - Our Projects</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -53,16 +53,16 @@
           <div class="col-lg-12">
             <nav aria-label="breadcrumb">
               <div class="pq-breadcrumb-title">
-                <h1>Tiles Packing</h1>
+                <h1 > <span id="breadcrumb-current" ></span></h1>
               </div>
               <div class="pq-breadcrumb-container">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="index.html">
-                      <i class="fas fa-home me-2"></i>Home
+                      <i class="fas fa-home me-2"></i><span id="breadcrumb-home">Home</span>
                     </a>
                   </li>
-                  <li class="breadcrumb-item active">Tiles Packing</li>
+                  <li class="breadcrumb-item active"><span id="breadcrumb-current-title">Tiles Packing</span></li>
                 </ol>
               </div>
             </nav>
@@ -77,9 +77,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h2 id="name-display-3">Tiles Packing</h2>
+            <h2 id="name-display-3" ><span id="heading"></span></h2>
             <p class="pq-section-description">
-              At King Stone, we excel in providing exceptional tiles packing solutions to ensure the safe transportation and delivery of your tiles. Our packaging process is designed to maintain the quality and integrity of each tile, making sure they reach their destination in perfect condition. Explore our premium packing methods tailored to meet the highest standards of care and reliability.
+              <span id="description">
+                At King Stone, we excel in providing exceptional tiles packing solutions to ensure the safe transportation and delivery of your tiles. Our packaging process is designed to maintain the quality and integrity of each tile, making sure they reach their destination in perfect condition. Explore our premium packing methods tailored to meet the highest standards of care and reliability.
+
+              </span>
             </p>
           </div>
         </div>
@@ -93,8 +96,8 @@
         <div class="row align-items-center">
           <div class="col-lg-8 col-md-8">
             <div class="pq-section-title pq-style-1">
-              <span class="pq-section-sub-title">Our Work</span>
-              <h5 class="pq-section-main-title">Explore Our Tiles Packing</h5>
+              <span class="pq-section-sub-title" id="gallery-sub-title">Our Work</span>
+              <h5 class="pq-section-main-title" id="gallery-main-title">Explore Our Tiles Packing</h5>
             </div>
           </div>
           <div class="col-lg-12">
@@ -212,6 +215,48 @@
         <script src="js/jquery.mCustomScrollbar.min.js"></script>
         <!-- Custom -->
         <script src="js/custom.js"></script>
+        <script>
+         document.addEventListener("DOMContentLoaded", () => {
+    // Get the language from the URL or default to English
+    const lang = new URLSearchParams(window.location.search).get("lang") || "en";
+
+    // Fetch translations
+    fetch("tilesdata.json")
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            return response.json();
+        })
+        .then(data => {
+            const translations = data[lang];
+            if (!translations) {
+                console.error(`No translations found for language: ${lang}`);
+                return;
+            }
+
+            // Update page title
+            document.title = translations.title;
+            
+            // Update breadcrumb
+            document.getElementById("breadcrumb-home").textContent = translations.breadcrumb.home;
+            document.getElementById("breadcrumb-current-title").textContent = translations.breadcrumb.current;
+            document.getElementById("breadcrumb-current").textContent = translations.breadcrumb.current;
+
+
+            // Update project description
+            const descriptionEl = document.getElementById("description");
+            const gallerySubTitleEl = document.getElementById("gallery-sub-title");
+            const galleryMainTitleEl = document.getElementById("gallery-main-title");
+            const headingEl = document.getElementById("heading");
+
+            if (descriptionEl) descriptionEl.textContent = translations.description;
+            if (gallerySubTitleEl) gallerySubTitleEl.textContent = translations.gallery.subTitle;
+            if (galleryMainTitleEl) galleryMainTitleEl.textContent = translations.gallery.mainTitle;
+            if (headingEl) headingEl.textContent = translations.heading;
+        })
+        .catch(error => console.error("Error loading translations:", error));
+});
+
+        </script>
       </body>
     
       <script>

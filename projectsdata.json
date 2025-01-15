@@ -1,0 +1,55 @@
+{
+    "en": {
+      "title": "King Stone - Our Projects",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Our Projects"
+      },
+      "heading": "Our Projects",
+      "description": "King Stone takes pride in delivering premium marble and granite solutions for a wide range of projects. Our portfolio showcases innovative designs, superior craftsmanship, and a commitment to excellence that makes each project unique. Explore our diverse collection of projects and be inspired by the beauty of natural stone.",
+      "gallery": {
+        "subTitle": "Our Work",
+        "mainTitle": "Explore Our Projects"
+      }
+    },
+    "ar": {
+      "title": "كينج ستون - مشاريعنا",
+      "breadcrumb": {
+        "home": "الرئيسية",
+        "current": "مشاريعنا"
+      },
+      "heading": "مشاريعنا",
+      "description": "تفخر كينج ستون بتقديم حلول متميزة من الرخام والجرانيت لمجموعة واسعة من المشاريع. يعرض ملفنا نماذج مبتكرة وحرفية فائقة والتزامًا بالتميز يجعل كل مشروع فريدًا. استكشف مجموعتنا المتنوعة من المشاريع واستمتع بجمال الحجر الطبيعي.",
+      "gallery": {
+        "subTitle": "عملنا",
+        "mainTitle": "استكشف مشاريعنا"
+      }
+    },
+    "fr": {
+      "title": "King Stone - Nos Projets",
+      "breadcrumb": {
+        "home": "Accueil",
+        "current": "Nos Projets"
+      },
+      "heading": "Nos Projets",
+      "description": "King Stone est fier de fournir des solutions premium en marbre et granit pour une large gamme de projets. Notre portfolio présente des designs innovants, un artisanat supérieur et un engagement envers l'excellence qui rend chaque projet unique. Découvrez notre collection variée de projets et laissez-vous inspirer par la beauté de la pierre naturelle.",
+      "gallery": {
+        "subTitle": "Notre Travail",
+        "mainTitle": "Découvrez Nos Projets"
+      }
+    },
+    "pt": {
+      "title": "King Stone - Nossos Projetos",
+      "breadcrumb": {
+        "home": "Início",
+        "current": "Nossos Projetos"
+      },
+      "heading": "Nossos Projetos",
+      "description": "A King Stone se orgulha em fornecer soluções premium de mármore e granito para uma ampla gama de projetos. Nosso portfólio apresenta designs inovadores, artesanato superior e um compromisso com a excelência que torna cada projeto único. Explore nossa coleção diversificada de projetos e inspire-se na beleza da pedra natural.",
+      "gallery": {
+        "subTitle": "Nosso Trabalho",
+        "mainTitle": "Explore Nossos Projetos"
+      }
+    }
+  }
+  

@@ -46,26 +46,23 @@
       </div>
     </div>
     <!-- Loading -->
-    <!-- Breadcrumb -->
-
     <div class="pq-breadcrumb">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-12">
             <nav aria-label="breadcrumb">
               <div class="pq-breadcrumb-title">
-                <h1 id="name-display-2">.........</h1>
+                <h1 id="name-display-2" data-translate="breadcrumbTitle">.........</h1>
               </div>
               <div class="pq-breadcrumb-container">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="index.html"
-                      ><i class="fas fa-home me-2"></i>Home</a
-                    >
+                    <a href="index.html">
+                      <i class="fas fa-home me-2"></i>
+                      <span data-translate="home">Home</span>
+                    </a>
                   </li>
-                  <li id="name-display-1" class="breadcrumb-item active">
-                    ......
-                  </li>
+                  <li id="name-display-1" class="breadcrumb-item active" data-translate="breadcrumbItem">......</li>
                 </ol>
               </div>
             </nav>
@@ -73,16 +70,15 @@
         </div>
       </div>
     </div>
-    <!-- Breadcrumb -->
-
-    <section class="">
+    
+    <section>
       <div class="container">
         <div class="row">
           <div class="mt-4 mt-lg-0">
-            <h5 class="pq-section-main-title">Choose</h5>
-            <h2 id="name-display-3">.........</h2>
-            <h5 class="pq-section-main-title">at your home</h5>
-            <p>
+            <h5 class="pq-section-main-title" data-translate="choose">Choose</h5>
+            <h2 id="name-display-3" data-translate="title">.........</h2>
+            <h5 class="pq-section-main-title" data-translate="atYourHome">at your home</h5>
+            <p data-translate="description1">
               King Stone design of your dream begins have been providing great
               flooring solutions and customer service for homeowners with a
               concept that is reflected in the blueprints, project plans, in 3D
@@ -91,7 +87,7 @@
               clients. among flooring materials, none is more elegant and
               luxurious than natural stone.
             </p>
-            <p class="pq-mb-45">
+            <p class="pq-mb-45" data-translate="description2">
               King Stone is a long established fact that a reader will be
               distracted by the readable content of a page when looking at its
               layout. Lorem Ipsum is interior dummy text of the printing and
@@ -102,14 +98,15 @@
         </div>
       </div>
     </section>
+    
     <!-- Gallery -->
     <div class="gallery">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8 col-md-8">
             <div class="pq-section-title pq-style-1">
-              <span class="pq-section-sub-title">latest work</span>
-              <h5 class="pq-section-main-title">discover our creation</h5>
+              <span class="pq-section-sub-title" data-translate="latestWork">latest work</span>
+              <h5 class="pq-section-main-title" data-translate="discover">discover our creation</h5>
             </div>
           </div>
           <div class="col-lg-4 col-md-4"></div>
@@ -117,28 +114,25 @@
             <div class="divider pq-left-border pq-45"></div>
           </div>
         </div>
-        <div class="row" id="gallery-container">
-          
-        </div>
+        <div class="row" id="gallery-container"></div>
       </div>
     </div>
-    <!-- Gallery -->
+    
     <!-- About Us -->
     <section class="about-us pq-pb-180">
       <div class="container">
         <!-- Content will be dynamically injected here -->
       </div>
     </section>
-    <!-- About Us -->
-
+    
     <!-- Portfolio -->
     <section class="portfolio">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8 col-md-8 wow animated fadeInRight">
             <div class="pq-section-title pq-style-1">
-              <span class="pq-section-sub-title">Related Product</span>
-              <h5 class="pq-section-main-title">Related Marbel</h5>
+              <span class="pq-section-sub-title" data-translate="relatedProduct">Related Product</span>
+              <h5 class="pq-section-main-title" data-translate="relatedMarble">Related Marble</h5>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 wow animated fadeInRight"></div>
@@ -155,6 +149,83 @@
         </div>
       </div>
     </section>
+    
+    <script>
+      const translations = {
+        en: {
+          breadcrumbTitle: "Our Products",
+          home: "Home",
+          breadcrumbItem: "Products",
+          choose: "Choose",
+          title: "Our Exclusive Range",
+          atYourHome: "at your home",
+          description1: "King Stone design of your dream begins have been providing great flooring solutions and customer service for homeowners with a concept that is reflected in the blueprints, project plans, in 3D visualizations. Since 1999, we have been providing great flooring solutions and customer service for homeowners and commercial clients. among flooring materials, none is more elegant and luxurious than natural stone.",
+          description2: "King Stone is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is interior dummy text of the printing and typesetting industry interior. Lorem Ipsum has been the industry’s standard dummy text ever since.",
+          latestWork: "latest work",
+          discover: "discover our creation",
+          relatedProduct: "Related Product",
+          relatedMarble: "Related Marble"
+        },
+        ar: {
+          breadcrumbTitle: "منتجاتنا",
+          home: "الرئيسية",
+          breadcrumbItem: "المنتجات",
+          choose: "اختر",
+          title: "مجموعة المنتجات الحصرية",
+          atYourHome: "في منزلك",
+          description1: "تصميم أحلامك مع كينغ ستون يبدأ بتقديم حلول أرضيات رائعة وخدمة عملاء متميزة لأصحاب المنازل، بمفهوم ينعكس في المخططات، وخطط المشاريع، وفي التصورات ثلاثية الأبعاد. منذ عام 1999، نقدم حلول أرضيات ممتازة وخدمة عملاء متميزة لأصحاب المنازل والعملاء التجاريين. من بين مواد الأرضيات، لا يوجد ما هو أكثر أناقة وفخامة من الحجر الطبيعي.",
+          description2: "من الحقائق القديمة المعروفة أن القارئ قد يتشتت بسبب المحتوى المقروء للصفحة عند النظر إلى تصميمها. لوريم إيبسوم هو نص تجريبي لصناعة الطباعة والتنسيق الداخلي. لقد كان لوريم إيبسوم هو النص القياسي في هذه الصناعة منذ ذلك الحين.",
+          latestWork: "أحدث الأعمال",
+          discover: "اكتشف إبداعاتنا",
+          relatedProduct: "منتج ذو صلة",
+          relatedMarble: "رخام ذو صلة"
+        },
+        fr: {
+          breadcrumbTitle: "Nos Produits",
+          home: "Accueil",
+          breadcrumbItem: "Produits",
+          choose: "Choisissez",
+          title: "Notre Gamme Exclusive",
+          atYourHome: "chez vous",
+          description1: "King Stone design de vos rêves commence en offrant des solutions de revêtement de sol de grande qualité et un service client exceptionnel aux propriétaires de maison avec un concept qui se reflète dans les plans, les plans de projet, dans les visualisations 3D. Depuis 1999, nous offrons des solutions de revêtement de sol de grande qualité et un service client exceptionnel aux propriétaires de maison et aux clients commerciaux. Parmi les matériaux de revêtement de sol, il n'y a pas de plus élégant et de plus luxueux que la pierre naturelle.",
+          description2: "King Stone est un fait établi que le lecteur sera distrait par le contenu lisible de la page lorsqu'il regarde sa mise en page. Lorem Ipsum est un texte d'espace réservé de l'industrie de l'impression et de la mise en page intérieure. Lorem Ipsum a été le texte d'espace réservé standard de cette industrie depuis lors.",
+          latestWork: "dernier travail",
+          discover: "découvrez nos créations",
+          relatedProduct: "Produit lié",
+          relatedMarble: "Marbre lié"
+        },
+        pt: {
+          breadcrumbTitle: "Nossos Produtos",
+          home: "Início",
+          breadcrumbItem: "Produtos",
+          choose: "Escolha",
+          title: "Nossa Gama Exclusiva",
+          atYourHome: "em sua casa",
+          description1: "King Stone design de seus sonhos começa a oferecer soluções de piso de alta qualidade e serviço ao cliente excepcional para os proprietários de casa com um conceito que se reflete nos planos, nos planos de projeto, nas visualizações 3D. Desde 1999, estamos oferecendo soluções de piso de alta qualidade e serviço ao cliente excepcional para os proprietários de casa e clientes comerciais. Entre os materiais de piso, não há nada mais elegante e luxuoso do que a pedra natural.",
+          description2: "King Stone é um fato estabelecido que o leitor será distraído pelo conteúdo legível da página quando olhar para sua estrutura. Lorem Ipsum é um texto de preenchimento de espaço da indústria de impressão e layout interno. Lorem Ipsum tem sido o texto de preenchimento de espaço padrão dessa indústria desde então.",
+          latestWork: "último trabalho",
+          discover: "descubra nossas criações",
+          relatedProduct: "Produto relacionado",
+          relatedMarble: "Mármore relacionado"
+        }
+      };
+    
+      const langaug = new URLSearchParams(window.location.search).get("lang") || "en";
+    
+      function applyTranslations(language) {
+        document.querySelectorAll("[data-translate]").forEach((element) => {
+          const key = element.getAttribute("data-translate");
+          if (translations[language] && translations[language][key]) {
+            element.textContent = translations[language][key];
+          }
+        });
+      }
+    
+      document.addEventListener("DOMContentLoaded", () => {
+        applyTranslations(langaug);
+      });
+    </script>
+    
     <!-- Portfolio -->
 
     <div data-include="components/footer.html"></div>
@@ -177,6 +248,1622 @@
     <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <!-- Custom -->
     <script src="js/custom.js"></script>
+    <script>
+      // Function to get query parameters
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+      const lang = getQueryParam("lang") || "en"; // Default to English if no language is specified
+  
+  
+      const relatedFieldMarbel = [
+        {
+          name: {
+            en: "Sinai Pearl – Triesta",
+            ar: "سيناء بيرل – تريستا",
+            pt: "Pérola do Sinai – Triesta",
+            fr: "Perle du Sinaï – Triesta"
+          },
+          image: "images/pics/Galala/1.jpg",
+          categorie: {
+            en: "Sinai",
+            ar: "سيناء",
+            pt: "Sinai",
+            fr: "Sinai"
+          },
+          url: "about-us.html?name=Sinai%20Pearl%20–%20Triesta"
+        },
+        {
+          name: {
+            en: "Galala Beige Marble",
+            ar: "رخام جلالة بيج",
+            pt: "Mármore Galala Bege",
+            fr: "Marbre Galala Beige"
+          },
+          image: "images/pics/Galala/2.jpg",
+          categorie: {
+            en: "Galala",
+            ar: "جلالة",
+            pt: "Galala",
+            fr: "Galala"
+          },
+          url: "about-us.html?name=Galala%20Beige%20Marble"
+        },
+        {
+          name: {
+            en: "Galala Light Marble",
+            ar: "رخام جلالة لايت",
+            pt: "Mármore Galala Light",
+            fr: "Marbre Galala Light"
+          },
+          image: "images/pics/Sunny/1.jpg",
+          categorie: {
+            en: "Galala",
+            ar: "جلالة",
+            pt: "Galala",
+            fr: "Galala"
+          },
+          url: "about-us.html?name=Galala%20Light%20Marble"
+        },
+        {
+          name: {
+            en: "Onyx Marble",
+            ar: "رخام أونيكس",
+            pt: "Mármore Ônix",
+            fr: "Marbre Onyx"
+          },
+          image: "images/pics/onyex/4.jpg",
+          categorie: {
+            en: "Onyx",
+            ar: "أونيكس",
+            pt: "Ônix",
+            fr: "Onyx"
+          },
+          url: "about-us.html?name=Onyx%20Marble"
+        },
+        {
+          name: {
+            en: "Samaha Marble",
+            ar: "رخام سماحة",
+            pt: "Mármore Samaha",
+            fr: "Marbre Samaha"
+          },
+          image: "images/pics/Samaha/1.jpg",
+          categorie: {
+            en: "Samaha",
+            ar: "سماحة",
+            pt: "Samaha",
+            fr: "Samaha"
+          },
+          url: "about-us.html?name=Samaha%20Marble"
+        },
+        {
+          name: {
+            en: "Zafarana Marble",
+            ar: "رخام زعفرانة",
+            pt: "Mármore Zafarana",
+            fr: "Marbre Zafarana"
+          },
+          image: "images/pics/Zaafrana/1.jpg",
+          categorie: {
+            en: "Zaafrana",
+            ar: "زعفرانة",
+            pt: "Zaafrana",
+            fr: "Zaafrana"
+          },
+          url: "about-us.html?name=Zafarana%20Marble"
+        }
+      ];
+  
+      const relatedFieldGranite = [
+        {
+          name: {
+            en: "Gandola Granite",
+            ar: "جرانيت جندولة",
+            pt: "Granito Gandola",
+            fr: "Granite Gandola"
+          },
+          image: "images/pics/gandola/3.jpeg",
+          categorie: {
+            en: "Granite",
+            ar: "جرانيت",
+            pt: "Granito",
+            fr: "Granite"
+          },
+          url: "about-us.html?name=Gandola%20Granite"
+        },
+        {
+          name: {
+            en: "New Halayeb Granite",
+            ar: "جرانيت حلايب الجديد",
+            pt: "Granito Novo Halayeb",
+            fr: "Granite Nouveau Halayeb"
+          },
+          image: "images/pics/newhalayp/1.jpg",
+          categorie: {
+            en: "Granite",
+            ar: "جرانيت",
+            pt: "Granito",
+            fr: "Granite"
+          },
+          url: "about-us.html?name=New%20Halayeb%20Granite"
+        },
+        {
+          name: {
+            en: "Rosa Hodi Granite",
+            ar: "جرانيت روزا هودي",
+            pt: "Granito Rosa Hodi",
+            fr: "Granite Rosa Hodi"
+          },
+          image: "images/pics/rosa hody/2.jpeg",
+          categorie: {
+            en: "Granite",
+            ar: "جرانيت",
+            pt: "Granito",
+            fr: "Granite"
+          },
+          url: "about-us.html?name=Rosa%20Hodi%20Granite"
+        },
+        {
+          name: {
+            en: "Red Aswan Granite",
+            ar: "جرانيت أسوان الأحمر",
+            pt: "Granito Aswan Vermelho",
+            fr: "Granite Rouge d'Assouan"
+          },
+          image: "images/pics/Aswan red/1.jpg",
+          categorie: {
+            en: "Granite",
+            ar: "جرانيت",
+            pt: "Granito",
+            fr: "Granite"
+          },
+          url: "about-us.html?name=Red%20Aswan%20Granite"
+        },
+        {
+          name: {
+            en: "Rosa Elnasr Granite",
+            ar: "جرانيت روزا النصر",
+            pt: "Granito Rosa Elnasr",
+            fr: "Granite Rosa Elnasr"
+          },
+          image: "images/pics/rosa nasr/1.jpeg",
+          categorie: {
+            en: "Granite",
+            ar: "جرانيت",
+            pt: "Granito",
+            fr: "Granite"
+          },
+          url: "about-us.html?name=Rosa%20Elnasr%20Granite"
+        },
+        {
+          name: {
+            en: "Red Forsan Granite",
+            ar: "جرانيت فورسان الأحمر",
+            pt: "Granito Vermelho Forsan",
+            fr: "Granite Rouge Forsan"
+          },
+          image: "images/pics/red forsan/1.jpeg",
+          categorie: {
+            en: "Granite",
+            ar: "جرانيت",
+            pt: "Granito",
+            fr: "Granite"
+          },
+          url: "about-us.html?name=Red%20Forsan%20Granite"
+        },
+        {
+          name: {
+            en: "Verdy Gazal Granite",
+            ar: "جرانيت فيردي غزال",
+            pt: "Granito Verdy Gazal",
+            fr: "Granite Verdy Gazal"
+          },
+          image: "images/pics/vardy/4.webp",
+          categorie: {
+            en: "Granite",
+            ar: "جرانيت",
+            pt: "Granito",
+            fr: "Granite"
+          },
+          url: "about-us.html?name=Verdy%20Gazal%20Granite"
+        }
+      ];
+  
+      const featuredProduct = [
+        {
+          icon: "flaticon-tile-2",
+          title: {
+            en: "Smooth Finish",
+            ar: "تشطيب ناعم",
+            pt: "Acabamento Suave",
+            fr: "Finition Lisse"
+          }
+        },
+        {
+          icon: "flaticon-modern-art",
+          title: {
+            en: "Timeless Appeal",
+            ar: "جاذبية خالدة",
+            pt: "Atrativo Atemporal",
+            fr: "Attrait Intemporel"
+          }
+        }
+      ];
+  
+      const checklist = [
+        {
+          en: "Ideal for flooring and wall cladding",
+          ar: "مثالي للأرضيات وتكسية الجدران",
+          pt: "Ideal para pisos e revestimentos de parede",
+          fr: "Idéal pour les sols et le revêtement mural"
+        },
+        {
+          en: "Resistant to wear and tear",
+          ar: "مقاوم للتآكل والتمزق",
+          pt: "Resistente ao desgaste",
+          fr: "Résistant à l'usure"
+        },
+        {
+          en: "Adds a touch of luxury to interiors",
+          ar: "يضيف لمسة من الفخامة إلى الديكورات الداخلية",
+          pt: "Acrescenta um toque de luxo aos interiores",
+          fr: "Ajoute une touche de luxe aux intérieurs"
+        }
+      ];
+          
+          
+            const data = [
+        {
+          image_array: [
+            "images/pics/Triesta/1.jpg",
+            "images/pics/Triesta/2.jpg",
+            "images/pics/Triesta/3.jpg",
+            "images/pics/Triesta/4.jpg",
+            "images/pics/Triesta/5.jpg",
+            "images/pics/Triesta/6.jpg",
+            "images/pics/Triesta/7.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/Triesta/6.jpg", "images/pics/Triesta/7.jpg"],
+            title: {
+              en: "The Warm Elegance of Sinai Pearl – Triesta",
+              ar: "أناقة دافئة للؤلؤة سيناء – تريستا",
+              fr: "L'élégance chaleureuse de la Perle du Sinaï – Triesta",
+              pt: "A Elegância Calorosa da Pérola do Sinai – Triesta",
+            },
+            description: {
+              en: "Sinai Pearl – Triesta offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "توفر لؤلؤة سيناء – تريستا الدفء والأناقة، مثالية للتصاميم الكلاسيكية والحديثة.",
+              fr: "La Perle du Sinaï – Triesta offre chaleur et élégance, parfaite pour les designs classiques et modernes.",
+              pt: "A Pérola do Sinai – Triesta oferece calor e elegância, perfeita para designs clássicos e modernos.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Sinai Pearl – Triesta",
+            ar: "لؤلؤة سيناء – تريستا",
+            fr: "Perle du Sinaï – Triesta",
+            pt: "Pérola do Sinai – Triesta",
+          },
+          description: {
+            en: "A premium Egyptian marble with a unique texture.",
+            ar: "رخام مصري فاخر بملمس فريد.",
+            fr: "Un marbre égyptien premium avec une texture unique.",
+            pt: "Um mármore egípcio premium com uma textura única.",
+          },
+          main_image: "images/sinai_pearl_triesta.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/Galala/1.jpg",
+            "images/pics/Galala/2.jpg",
+            "images/pics/Galala/3.jpg",
+            "images/pics/Galala/4.jpg",
+            "images/pics/Galala/5.jpg",
+            "images/pics/Galala/6.jpg",
+            "images/pics/Galala/7.jpeg",
+          ],
+          aboutUs: {
+            images: ["images/pics/Galala/6.jpg", "images/pics/Galala/7.jpeg"],
+            title: {
+              en: "The Warm Elegance of Galala Beige Marble",
+              ar: "أناقة دافئة لرخام جلالة بيج",
+              fr: "L'élégance chaleureuse du Marbre Beige Galala",
+              pt: "A Elegância Calorosa do Mármore Bege Galala",
+            },
+            description: {
+              en: "Galala Beige Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام جلالة بيج يوفّر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              fr: "Le Marbre Beige Galala offre chaleur et élégance, parfaite pour les designs classiques et modernes.",
+              pt: "O Mármore Bege Galala oferece calor e elegância, perfeito para designs clássicos e modernos.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Galala Beige Marble",
+            ar: "رخام جلالة بيج",
+            fr: "Marbre Beige Galala",
+            pt: "Mármore Bege Galala",
+          },
+          description: {
+            en: "Known for its warm beige color and smooth finish.",
+            ar: "يُعرف برخام جلالة لونه البيج الدافئ ونوعه الناعم.",
+            fr: "Connue pour sa couleur beige chaude et son fini lisse.",
+            pt: "Conhecido pelo seu tom bege quente e acabamento liso.",
+          },
+          main_image: "images/galala_beige.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/Galala/7.jpeg",
+            "images/pics/Galala/6.jpg",
+            "images/pics/Galala/5.jpg",
+            "images/pics/Galala/1.jpg",
+            "images/pics/Galala/4.jpg",
+            "images/pics/Galala/3.jpg",
+            "images/pics/Galala/2.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/Galala/1.jpg", "images/pics/Galala/2.jpg"],
+            title: {
+              en: "The Warm Elegance of Galala Light Marble",
+              ar: "أناقة دافئة لرخام جلالة لايت",
+              fr: "L'élégance chaleureuse du Marbre Galala Light",
+              pt: "A Elegância Calorosa do Mármore Galala Light",
+            },
+            description: {
+              en: "Galala Light Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام جلالة لايت يوفّر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              fr: "Le Marbre Galala Light offre chaleur et élégance, parfait pour les designs classiques et modernes.",
+              pt: "O Mármore Galala Light oferece calor e elegância, perfeito para designs clássicos e modernos.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Galala Light Marble",
+            ar: "رخام جلالة لايت",
+            fr: "Marbre Galala Light",
+            pt: "Mármore Galala Light",
+          },
+          description: {
+            en: "A lighter variant of Galala Marble, offering elegance.",
+            ar: "نسخة أخف من رخام جلالة، تقدم الأناقة.",
+            fr: "Une variante plus légère du Marbre Galala, offrant de l'élégance.",
+            pt: "Uma variante mais clara do Mármore Galala, oferecendo elegância.",
+          },
+          main_image: "images/galala_light.jpg",
+        },
+  
+  
+        {
+          image_array: [
+            "images/pics/stones/FELLETTO.jpg",
+            "images/pics/fletto/1.jpg",
+            "images/pics/fletto/2.jpg",
+            "images/pics/fletto/3.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/fletto/2.jpg", "images/pics/fletto/3.jpg"],
+            title: {
+              en: "The Warm Elegance of Fletto Marble",
+              ar: "أناقة دافئة لرخام فليتو",
+              pt: "A Elegância Quente do Mármore Fletto",
+              fr: "L'Élégance Chaleureuse du Marbre Fletto"
+            },
+            description: {
+              en: "Fletto Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام فليتو يقدم الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Fletto oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Fletto offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Fletto Marble",
+            ar: "رخام فليتو",
+            pt: "Mármore Fletto",
+            fr: "Marbre Fletto"
+          },
+          description: {
+            en: "Distinctive marble with a flecked pattern.",
+            ar: "رخام مميز بنمط مبقع.",
+            pt: "Mármore distinto com padrão manchado.",
+            fr: "Marbre distinctif avec un motif tacheté."
+          },
+          main_image: "images/fletto.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/sinaigray/1.jpg",
+            "images/pics/sinaigray/2.jpg",
+            "images/pics/sinaigray/3.jpg",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/sinaigray/1.jpg",
+              "images/pics/sinaigray/2.jpg",
+            ],
+            title: {
+              en: "The Warm Elegance of Sinai Pearl Gray",
+              ar: "أناقة دافئة لرخام سيناء بيرل رمادي",
+              pt: "A Elegância Quente do Mármore Sinai Pearl Gray",
+              fr: "L'Élégance Chaleureuse du Marbre Sinai Pearl Gray"
+            },
+            description: {
+              en: "Sinai Pearl Gray offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام سيناء بيرل رمادي يقدم الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Sinai Pearl Gray oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Sinai Pearl Gray offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Sinai Pearl Gray",
+            ar: "رخام سيناء بيرل رمادي",
+            pt: "Mármore Sinai Pearl Gray",
+            fr: "Marbre Sinai Pearl Gray"
+          },
+          description: {
+            en: "Elegant gray marble with subtle patterns.",
+            ar: "رخام رمادي أنيق مع أنماط خفية.",
+            pt: "Mármore cinza elegante com padrões sutis.",
+            fr: "Marbre gris élégant avec des motifs subtils."
+          },
+          main_image: "images/sinai_pearl_gray.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/Sunny/1.jpg",
+            "images/pics/Sunny/2.jpg",
+            "images/pics/Sunny/3.jpg",
+            "images/pics/Sunny/4.jpg",
+            "images/pics/Sunny/5.jpg",
+            "images/pics/Sunny/6.jpg",
+            "images/pics/Sunny/7.jpg",
+          ],
+  
+          aboutUs: {
+            images: ["images/pics/Sunny/2.jpg", "images/pics/Sunny/3.jpg"],
+            title: {
+              en: "The Warm Elegance of Sunny Menia Marble",
+              ar: "أناقة دافئة لرخام سني مينيا",
+              pt: "A Elegância Quente do Mármore Sunny Menia",
+              fr: "L'Élégance Chaleureuse du Marbre Sunny Menia"
+            },
+            description: {
+              en: "Sunny Menia Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام سني مينيا يقدم الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Sunny Menia oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Sunny Menia offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Sunny Menia Marble",
+            ar: "رخام سني مينيا",
+            pt: "Mármore Sunny Menia",
+            fr: "Marbre Sunny Menia"
+          },
+          description: {
+            en: "Radiant marble with a sunny, golden tone.",
+            ar: "رخام مشع مع نبرة ذهبية مشمسة.",
+            pt: "Mármore radiante com um tom dourado solar.",
+            fr: "Marbre rayonnant avec un ton doré ensoleillé."
+          },
+          main_image: "images/sunny_menia.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/golden cream/1.webp",
+            "images/pics/golden cream/2.jpg",
+            "images/pics/golden cream/3.jpeg",
+            "images/pics/golden cream/4.jpg",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/golden cream/1.webp",
+              "images/pics/golden cream/2.jpg",
+            ],
+            title: {
+              en: "The Warm Elegance of Golden Cream Marble",
+              ar: "أناقة دافئة لرخام الكريم الذهبي",
+              pt: "A Elegância Quente do Mármore Golden Cream",
+              fr: "L'Élégance Chaleureuse du Marbre Golden Cream"
+            },
+            description: {
+              en: "Golden Cream Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام الكريم الذهبي يقدم الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Golden Cream oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Golden Cream offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Golden Cream Marble",
+            ar: "رخام الكريم الذهبي",
+            pt: "Mármore Golden Cream",
+            fr: "Marbre Golden Cream"
+          },
+          description: {
+            en: "Luxurious cream marble with golden hues.",
+            ar: "رخام كريمي فاخر مع ألوان ذهبية.",
+            pt: "Mármore de creme luxuoso com tons dourados.",
+            fr: "Marbre de crème luxueux avec des tons dorés."
+          },
+          main_image: "images/golden_cream.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/silvia/1.jpg",
+            "images/pics/silvia/2.jpg",
+            "images/pics/silvia/3.jpg",
+            "images/pics/silvia/4.jpg",
+            "images/pics/silvia/5.jpg",
+            "images/pics/silvia/6.jpg",
+            "images/pics/silvia/7.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/silvia/1.jpg", "images/pics/silvia/2.jpg"],
+            title: {
+              en: "The Warm Elegance of Silvia Menia Marble",
+              ar: "أناقة دافئة لرخام سيلفيا مينيا",
+              pt: "A Elegância Quente do Mármore Silvia Menia",
+              fr: "L'Élégance Chaleureuse du Marbre Silvia Menia"
+            },
+            description: {
+              en: "Silvia Menia Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام سيلفيا مينيا يقدم الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Silvia Menia oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Silvia Menia offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Silvia Menia Marble",
+            ar: "رخام سيلفيا مينيا",
+            pt: "Mármore Silvia Menia",
+            fr: "Marbre Silvia Menia"
+          },
+          description: {
+            en: "A classic choice for timeless elegance.",
+            ar: "أختيار كلاسيكي للازدياد الأنيق.",
+            pt: "Uma escolha clássica para uma elegância atemporal.",
+            fr: "Un choix classique pour une élégance intemporelle."
+          },
+          main_image: "images/silvia_menia.jpg",
+        },
+        
+        
+        {
+          image_array: [
+            "images/pics/Sunny/7.jpg",
+            "images/pics/Sunny/2.jpg",
+            "images/pics/Sunny/3.jpg",
+            "images/pics/Sunny/1.jpg",
+            "images/pics/Sunny/5.jpg",
+            "images/pics/Sunny/6.jpg",
+            "images/pics/Sunny/4.jpg",
+          ],
+  
+          aboutUs: {
+            images: ["images/pics/Sunny/6.jpg", "images/pics/Sunny/7.jpg"],
+            title: {
+              en: "The Warm Elegance of Sunny Light Marble",
+              ar: "أناقة دافئة لرخام سوني لايت",
+              pt: "A Elegância Quente do Mármore Sunny Light",
+              fr: "L'Élégance Chaleureuse du Marbre Sunny Light"
+            },
+            description: {
+              en: "Sunny Light Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام سوني لايت يقدم الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Sunny Light oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Sunny Light offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Sunny Light Marble",
+            ar: "رخام سوني لايت",
+            pt: "Mármore Sunny Light",
+            fr: "Marbre Sunny Light"
+          },
+          description: {
+            en: "Bright and warm marble for modern designs.",
+            ar: "مرمر明 و دافئ لتصاميم حديثة.",
+            pt: "Mármore brilhante e quente para designs modernos.",
+            fr: "Marbre lumineux et chaud pour les designs modernes."
+          },
+          main_image: "images/sunny_light.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/sunny dark/1.jpg",
+            "images/pics/sunny dark/2.jpeg",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/sunny dark/1.jpg",
+              "images/pics/sunny dark/2.jpeg",
+            ],
+            title: {
+              en: "The Warm Elegance of Sunny Dark Marble",
+              ar: "أناقة دافئة لرخام سوني دارك",
+              pt: "A Elegância Quente do Mármore Sunny Dark",
+              fr: "L'Élégance Chaleureuse du Marbre Sunny Dark"
+            },
+            description: {
+              en: "Sunny Dark Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام سوني دارك يقدم الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Sunny Dark oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Sunny Dark offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Sunny Dark Marble",
+            ar: "رخام سوني دارك",
+            pt: "Mármore Sunny Dark",
+            fr: "Marbre Sunny Dark"
+          },
+          description: {
+            en: "Dark-toned marble with a sophisticated look.",
+            ar: "مرمر داكن التональية مع مظهر متطور.",
+            pt: "Mármore de tom escuro com um look sofisticado.",
+            fr: "Marbre de ton sombre avec un look sophistiqué."
+          },
+          main_image: "images/sunny_dark.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/Miley Grey/2.jpg",
+            "images/pics/Miley Grey/3.jpg",
+            "images/pics/Miley Grey/4.jpg",
+            "images/pics/Miley Grey/5.jpg",
+            "images/pics/Miley Grey/6.jpg",
+            "images/pics/Miley Grey/7.jpg",
+            "images/pics/Miley Grey/8.jpg",
+            "images/pics/Miley Grey/9.jpg",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/Miley Grey/7.jpg",
+              "images/pics/Miley Grey/8.jpg",
+            ],
+            title: {
+              en: "The Warm Elegance of Milly Gray Marble",
+              ar: "دفء وأناقة رخام ميلي جراي",
+              pt: "A Elegância Aconchegante do Mármore Milly Gray",
+              fr: "L'élégance Chaleureuse du Marbre Milly Gray"
+            },
+            description: {
+              en: "Milly Gray Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام ميلي جراي يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Milly Gray oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Milly Gray offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Milly Gray Marble",
+            ar: "رخام ميلي جراي",
+            pt: "Mármore Milly Gray",
+            fr: "Marbre Milly Gray"
+          },
+          description: {
+            en: "Refined gray marble with a sleek finish.",
+            ar: "رخام رمادي مصقول بلمسة نهائية سلسة.",
+            pt: "Mármore cinza refinado com um acabamento elegante.",
+            fr: "Marbre gris raffiné avec une finition élégante."
+          },
+          main_image: "images/milly_gray.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/Miley Grey/2.jpg",
+            "images/pics/Miley Grey/3.jpg",
+            "images/pics/Miley Grey/4.jpg",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/Miley Grey/3.jpg",
+              "images/pics/Miley Grey/4.jpg",
+            ],
+            title: {
+              en: "The Warm Elegance of Milly Brown Marble",
+              ar: "أناقة دافئة لرخام ميلي براون",
+              pt: "A Elegância Quente do Mármore Milly Brown",
+              fr: "L'élégance Chaleureuse du Marbre Milly Brown"
+            },
+            description: {
+              en: "Milly Brown Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام ميلي براون يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Milly Brown oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Milly Brown offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Milly Brown Marble",
+            ar: "رخام ميلي براون",
+            pt: "Mármore Milly Brown",
+            fr: "Marbre Milly Brown"
+          },
+          description: {
+            en: "Warm brown marble with earthy tones.",
+            ar: "مرمر براون دافئ بلمسة نهائية ترابية.",
+            pt: "Mármore marrom quente com tons terrosos.",
+            fr: "Marbre brun chaud avec des tons terrestres."
+          },
+          main_image: "images/milly_brown.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/Samaha/1.jpg",
+            "images/pics/Samaha/2.jpg",
+            "images/pics/Samaha/3.jpg",
+            "images/pics/Samaha/4.jpg",
+            "images/pics/Samaha/5.jpg",
+            "images/pics/Samaha/6.jpg",
+            "images/pics/Samaha/7.jpeg",
+            "images/pics/Samaha/8.jpeg",
+          ],
+          aboutUs: {
+            images: ["images/pics/Samaha/1.jpg", "images/pics/Samaha/2.jpg"],
+            title: {
+              en: "The Warm Elegance of Samaha Marble",
+              ar: "أناقة دافئة لرخام سماحة",
+              pt: "A Elegância Quente do Mármore Samaha",
+              fr: "L'élégance Chaleureuse du Marbre Samaha"
+            },
+            description: {
+              en: "Samaha Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام سماحة يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Samaha oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Samaha offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Samaha Marble",
+            ar: "رخام سماحة",
+            pt: "Mármore Samaha",
+            fr: "Marbre Samaha"
+          },
+          description: {
+            en: "High-quality Egyptian marble for versatile uses.",
+            ar: "مرمر مصري عالي الجودة للاستخدامات المختلفة.",
+            pt: "Mármore egípcio de alta qualidade para usos versáteis.",
+            fr: "Marbre égyptien de haute qualité pour des utilisations variées."
+          },
+          main_image: "images/samaha.jpg",
+        },
+        
+        {
+          image_array: [
+            "images/pics/katrena/1.jpg",
+            "images/pics/katrena/1.png",
+            "images/pics/katrena/3.jpg",
+            "images/pics/katrena/5.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/katrena/1.jpg", "images/pics/katrena/1.png"],
+            title: {
+              en: "The Warm Elegance of Katreen Marble",
+              ar: "الأناقة الدافئة لرخام كاترينا",
+              pt: "A Elegância Quente do Mármore Katreen",
+              fr: "L'élégance Chaleureuse du Marbre Katreen"
+            },
+            description: {
+              en: "Katreen Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام كاترينا يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Katreen oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Katreen offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField:relatedFieldMarbel,
+          name: {
+            en: "Katreen Marble",
+            ar: "رخام كاترينا",
+            pt: "Mármore Katreen",
+            fr: "Marbre Katreen"
+          },
+          description: {
+            en: "Elegant marble with a natural appeal.",
+            ar: "مرمر أنيق مع لمسة طبيعية.",
+            pt: "Mármore elegante com um toque natural.",
+            fr: "Marbre élégant avec un aspect naturel."
+          },
+          main_image: "images/katreen.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/khatam/1.webp",
+            "images/pics/khatam/2.jpeg",
+            "images/pics/khatam/3.jpeg",
+            "images/pics/khatam/4.jpeg",
+            "images/pics/khatam/5.jpeg",
+            "images/pics/khatam/6.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/khatam/1.webp", "images/pics/khatam/2.jpeg"],
+            title: {
+              en: "The Warm Elegance of Khatmya Marble",
+              ar: "الأناقة الدافئة لرخام خاتمية",
+              pt: "A Elegância Quente do Mármore Khatmya",
+              fr: "L'élégance Chaleureuse du Marbre Khatmya"
+            },
+            description: {
+              en: "Khatmya Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام خاتمية يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Khatmya oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Khatmya offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+                  relatedField:relatedFieldMarbel,
+  
+          name: {
+            en: "Khatmya Marble",
+            ar: "رخام خاتمية",
+            pt: "Mármore Khatmya",
+            fr: "Marbre Khatmya"
+          },
+          description: {
+            en: "Exquisite marble with unique veining.",
+            ar: "مرمر رخام خاتمية مع ملامح فريدة.",
+            pt: "Mármore exuberante com veios únicos.",
+            fr: "Marbre exquis avec des veines uniques."
+          },
+          main_image: "images/khatmya.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/Zaafrana/1.jpg",
+            "images/pics/Zaafrana/2.jpg",
+            "images/pics/Zaafrana/3.jpeg",
+            "images/pics/Zaafrana/4.jpeg",
+          ],
+          aboutUs: {
+            images: ["images/pics/Zaafrana/1.jpg", "images/pics/Zaafrana/3.jpeg"],
+            title: {
+              en: "The Warm Elegance of Zafarana Marble",
+              ar: "الأناقة الدافئة لرخام زعفرانة",
+              pt: "A Elegância Quente do Mármore Zafarana",
+              fr: "L'élégance Chaleureuse du Marbre Zafarana"
+            },
+            description: {
+              en: "Zafarana Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام زعفرانة يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Mármore Zafarana oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Marbre Zafarana offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Zafarana Marble",
+            ar: "رخام زعفرانة",
+            pt: "Mármore Zafarana",
+            fr: "Marbre Zafarana"
+          },
+          description: {
+            en: "Premium marble with a distinctive light tone.",
+            ar: "رخام ممتاز بلون فاتح مميز.",
+            pt: "Mármore premium com um tom claro distinto.",
+            fr: "Marbre premium avec une teinte claire distinctive."
+          },
+          main_image: "images/zafarana.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/onyex/1.jpg",
+            "images/pics/onyex/2.jpg",
+            "images/pics/onyex/3.jpg",
+            "images/pics/onyex/4.jpg",
+            "images/pics/onyex/5.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/onyex/4.jpg", "images/pics/onyex/5.jpg"],
+            title: {
+              en: "The Warm Elegance of Onyx Marble",
+              ar: "الأناقة الدافئة لرخام الأونيكس",
+              pt: "A elegância quente do mármore de ônix",
+              fr: "L'élégance chaude du marbre d'onyx",
+            },
+            description: {
+              en: "Onyx Marble offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "رخام الأونيكس يزود الدفء والأناقة، مثالي لتصميمات كلاسيكية وعصرية.",
+              pt: "O mármore de ônix oferece calor e elegância, perfeito para projetos clássicos e modernos.",
+              fr: "Le marbre d'onyx offre chaleur et élégance, parfait pour les conceptions classiques et modernes.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldMarbel,
+          name: {
+            en: "Onyx Marble",
+            ar: "رخام أونيكس",
+            pt: "Mármore de Ônix",
+            fr: "Marbre d'Onyx",
+          },
+          description: {
+            en: "Luxurious marble with translucent qualities.",
+            ar: "رخام فاخر مع مواصفات نصف شفافة.",
+            pt: "Mármore luxuoso com qualidades translúcidas.",
+            fr: "Marbre de luxe avec des qualités translucides.",
+          },
+          main_image: "images/onyx.jpg",
+        },
+  
+
+
+        {
+          image_array: [
+            "images/pics/byanco/1.jpeg",
+            "images/pics/byanco/2.jpeg",
+            "images/pics/byanco/3.jpeg",
+            "images/pics/byanco/4.jpeg",
+            "images/pics/byanco/5.jpeg",
+            "images/pics/byanco/6.jpeg",
+          ],
+          aboutUs: {
+            images: ["images/pics/byanco/1.jpeg", "images/pics/byanco/6.jpeg"],
+            title: {
+              en: "The Warm Elegance of Bianco Halayeb Granite",
+              ar: "الأناقة الدافئة لجرانيت بيانكو حلايب",
+              pt: "A elegância quente do granito Bianco Halayeb",
+              fr: "L'élégance chaude du granite Bianco Halayeb",
+            },
+            description: {
+              en: "Bianco Halayeb Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت بيانكو حلايب يزود الدفء والأناقة، مثالي لتصميمات كلاسيكية وعصرية.",
+              pt: "O granito Bianco Halayeb oferece calor e elegância, perfeito para projetos clássicos e modernos.",
+              fr: "Le granite Bianco Halayeb offre chaleur et élégance, parfait pour les conceptions classiques et modernes.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+  
+          name: {
+            en: "Bianco Halayeb Granite",
+            ar: "جرانيت بيانكو حلايب",
+            pt: "Granito Bianco Halayeb",
+            fr: "Granite Bianco Halayeb",
+          },
+          description: {
+            en: "Granite with a beautiful white and gray mix.",
+            ar: "جرانيت مع مزيج أبيض ورمادي جميل.",
+            pt: "Granito com uma mistura branca e cinza atraente.",
+            fr: "Granite avec un mélange de blanc et de gris attractif.",
+          },
+          main_image: "images/bianco_halayeb.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/gandola/1.jpg",
+            "images/pics/gandola/2.jpeg",
+            "images/pics/gandola/3.jpeg",
+            "images/pics/gandola/4.webp",
+          ],
+          aboutUs: {
+            images: ["images/pics/gandola/3.jpeg", "images/pics/gandola/4.webp"],
+            title: {
+              en: "The Warm Elegance of Gandola Granite",
+              ar: "الأناقة الدافئة لجرانيت جاندولا",
+              pt: "A elegância quente do granito Gandola",
+              fr: "L'élégance chaude du granite Gandola",
+            },
+            description: {
+              en: "Gandola Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت جاندولا يزود الدفء والأناقة، مثالي لتصميمات كلاسيكية وعصرية.",
+              pt: "O granito Gandola oferece calor e elegância, perfeito para projetos clássicos e modernos.",
+              fr: "Le granite Gandola offre chaleur et élégance, parfait pour les conceptions classiques et modernes.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+                  relatedField: relatedFieldGranite,
+  
+          name: {
+            en: "Gandola Granite",
+            ar: "جرانيت جاندولا",
+            pt: "Granito Gandola",
+            fr: "Granite Gandola",
+          },
+          description: {
+            en: "Durable granite with a rich texture.",
+            ar: "جرانيت متين مع ملمس غني.",
+            pt: "Granito durável com uma textura rica.",
+            fr: "Granite durable avec une texture riche.",
+          },
+          main_image: "images/gandola.jpg",
+        },
+  
+        {
+          image_array: [
+            "images/pics/newhalayp/1.jpg",
+            "images/pics/newhalayp/2.png",
+            "images/pics/newhalayp/3.jpg",
+            "images/pics/newhalayp/4.webp",
+            "images/pics/newhalayp/5.jpeg",
+            "images/pics/newhalayp/6.jpeg",
+            "images/pics/newhalayp/7.png",
+            "images/pics/newhalayp/8.webp",
+            "images/pics/newhalayp/9.webp",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/newhalayp/1.jpg",
+              "images/pics/newhalayp/2.png",
+            ],
+            title: {
+              en: "The Warm Elegance of New Halayeb Granite",
+              ar: "الأناقة الدافئة لجرانيت حلايب الجديد",
+              pt: "A elegância quente do granito Novo Halayeb",
+              fr: "L'élégance chaude du granite Nouveau Halayeb",
+            },
+            description: {
+              en: "New Halayeb Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت حلايب الجديد يزود الدفء والأناقة، مثالي لتصميمات كلاسيكية وعصرية.",
+              pt: "O granito Novo Halayeb oferece calor e elegância, perfeito para projetos clássicos e modernos.",
+              fr: "Le granite Nouveau Halayeb offre chaleur et élégance, parfait pour les conceptions classiques et modernes.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+                  relatedField:relatedFieldGranite,
+  
+          name: {
+            en: "New Halayeb Granite",
+            ar: "جرانيت حلايب الجديد",
+            pt: "Granito Novo Halayeb",
+            fr: "Granite Nouveau Halayeb",
+          },
+          description: {
+            en: "Modern granite with a refined look.",
+            ar: "جرانيت عصري مع مظهر رائع.",
+            pt: "Granito moderno com um visual refinado.",
+            fr: "Granite moderne avec un aspect raffiné.",
+          },
+          main_image: "images/new_halayeb.jpg",
+        },
+        
+        {
+          image_array: [
+            "images/pics/rosa hody/1.jpeg",
+            "images/pics/rosa hody/6.png",
+            "images/pics/rosa hody/2.jpeg",
+            "images/pics/rosa hody/3.jpeg",
+            "images/pics/rosa hody/4.png",
+            "images/pics/rosa hody/5.png",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/rosa hody/2.jpeg",
+              "images/pics/rosa hody/3.jpeg",
+            ],
+            title: {
+              en: "The Warm Elegance of Rosa Hodi Granite",
+              ar: "الأناقة الدافئة لجرانيت روزا هودي",
+              pt: "A elegância quente do granito Rosa Hodi",
+              fr: "L'élégance chaude du granite Rosa Hodi",
+            },
+            description: {
+              en: "Rosa Hodi Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت روزا هودي يزود الدفء والأناقة، مثالي لتصميمات كلاسيكية وعصرية.",
+              pt: "O granito Rosa Hodi oferece calor e elegância, perfeito para projetos clássicos e modernos.",
+              fr: "Le granite Rosa Hodi offre chaleur et élégance, parfait pour les conceptions classiques et modernes.",
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+                  relatedField: relatedFieldGranite,
+  
+          name: {
+            en: "Rosa Hodi Granite",
+            ar: "جرانيت روزا هودي",
+            pt: "Granito Rosa Hodi",
+            fr: "Granite Rosa Hodi",
+          },
+          description: {
+            en: "Pink-toned granite with unique patterns.",
+            ar: "جرانيت مائل للحمرة مع أنماط فريدة.",
+            pt: "Granito com tons de rosa e padrões únicos.",
+            fr: "Granite aux tons roses avec des motifs uniques.",
+          },
+          main_image: "images/rosa_hodi.jpg",
+        },
+        
+        {
+          image_array: [
+            "images/pics/Aswan red/1.jpg",
+            "images/pics/Aswan red/2.jpg",
+            "images/pics/Aswan red/3.jpeg",
+            "images/pics/Aswan red/4.jpg",
+            "images/pics/Aswan red/5.jpg",
+            "images/pics/Aswan red/6.jpg",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/Aswan red/1.jpg",
+              "images/pics/Aswan red/2.jpg",
+            ],
+            title: {
+              en: "The Warm Elegance of Red Aswan Granite",
+              ar: "دفء وأناقة جرانيت أسوان الأحمر",
+              pt: "A Elegância Calorosa do Granito Vermelho Aswan",
+              fr: "L'Élégance Chaleureuse du Granite Rouge d'Assouan"
+            },
+            description: {
+              en: "Red Aswan Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت أسوان الأحمر يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Granito Vermelho Aswan oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Granite Rouge d'Assouan offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+          name: {
+            en: "Red Aswan Granite",
+            ar: "جرانيت أسوان الأحمر",
+            pt: "Granito Vermelho Aswan",
+            fr: "Granite Rouge d'Assouan"
+          },
+          description: {
+            en: "Vibrant red granite with a bold statement.",
+            ar: "جرانيت أحمر نابض بالحياة مع بيان جريء.",
+            pt: "Granito vermelho vibrante com uma declaração ousada.",
+            fr: "Granite rouge vibrant avec une déclaration audacieuse."
+          },
+          main_image: "images/red_aswan.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/rosa nasr/1.jpeg",
+            "images/pics/rosa nasr/2.webp",
+            "images/pics/rosa nasr/7.webp",
+            "images/pics/rosa nasr/3.jpg",
+            "images/pics/rosa nasr/4.jpeg",
+            "images/pics/rosa nasr/5.jpg",
+            "images/pics/rosa nasr/6.jpeg",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/rosa nasr/1.jpeg",
+              "images/pics/rosa nasr/2.webp",
+            ],
+            title: {
+              en: "The Warm Elegance of Rosa Elnasr Granite",
+              ar: "دفء وأناقة جرانيت روزا النصر",
+              pt: "A Elegância Calorosa do Granito Rosa Elnasr",
+              fr: "L'Élégance Chaleureuse du Granite Rosa Elnasr"
+            },
+            description: {
+              en: "Rosa Elnasr Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت روزا النصر يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Granito Rosa Elnasr oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Granite Rosa Elnasr offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+          name: {
+            en: "Rosa Elnasr Granite",
+            ar: "جرانيت روزا النصر",
+            pt: "Granito Rosa Elnasr",
+            fr: "Granite Rosa Elnasr"
+          },
+          description: {
+            en: "Charming pink granite with natural beauty.",
+            ar: "جرانيت وردي ساحر بجمال طبيعي.",
+            pt: "Granito rosa encantador com beleza natural.",
+            fr: "Granite rose charmant avec une beauté naturelle."
+          },
+          main_image: "images/rosa_elnasr.jpg",
+        },
+        
+        
+        {
+          image_array: [
+            "images/pics/red forsan/1.jpeg",
+            "images/pics/red forsan/2.webp",
+            "images/pics/red forsan/3.jpg",
+            "images/pics/red forsan/4.webp",
+            "images/pics/red forsan/5.jpeg",
+            "images/pics/red forsan/6.webp",
+          ],
+          aboutUs: {
+            images: [
+              "images/pics/red forsan/1.jpeg",
+              "images/pics/red forsan/2.webp",
+            ],
+            title: {
+              en: "The Warm Elegance of Red Forsan Granite",
+              ar: "دفء وأناقة جرانيت فورسان الأحمر",
+              pt: "A Elegância Calorosa do Granito Vermelho Forsan",
+              fr: "L'Élégance Chaleureuse du Granite Rouge Forsan"
+            },
+            description: {
+              en: "Red Forsan Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت فورسان الأحمر يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Granito Vermelho Forsan oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Granite Rouge Forsan offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+          name: {
+            en: "Red Forsan Granite",
+            ar: "جرانيت فورسان الأحمر",
+            pt: "Granito Vermelho Forsan",
+            fr: "Granite Rouge Forsan"
+          },
+          description: {
+            en: "Distinct red granite with unique veining.",
+            ar: "جرانيت أحمر متميز مع عروق فريدة.",
+            pt: "Granito vermelho distinto com veias únicas.",
+            fr: "Granite rouge distinct avec des veines uniques."
+          },
+          main_image: "images/red_forsan.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/vardy/1.jpg",
+            "images/pics/vardy/2.jpeg",
+            "images/pics/vardy/3.jpg",
+            "images/pics/vardy/4.webp",
+            "images/pics/vardy/5.jpeg",
+            "images/pics/vardy/6.jpg",
+          ],
+          aboutUs: {
+            images: ["images/pics/vardy/4.webp", "images/pics/vardy/5.jpeg"],
+            title: {
+              en: "The Warm Elegance of Verdy Gazal Granite",
+              ar: "دفء وأناقة جرانيت فيردي غزال",
+              pt: "A Elegância Calorosa do Granito Verde Gazal",
+              fr: "L'Élégance Chaleureuse du Granite Vert Gazal"
+            },
+            description: {
+              en: "Verdy Gazal Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت فيردي غزال يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Granito Verde Gazal oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Granite Vert Gazal offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+          name: {
+            en: "Verdy Gazal Granite",
+            ar: "جرانيت فيردي غزال",
+            pt: "Granito Verde Gazal",
+            fr: "Granite Vert Gazal"
+          },
+          description: {
+            en: "Granite with earthy green tones and patterns.",
+            ar: "جرانيت مع تدرجات خضراء أرضية وأنماط.",
+            pt: "Granito com tons verdes terrosos e padrões.",
+            fr: "Granite avec des tons verts terrestres et des motifs."
+          },
+          main_image: "images/verdy_gazal.jpg",
+        },
+        
+        
+        
+        {
+          image_array: [
+            "images/pics/safaga/1.jpeg",
+            "images/pics/safaga/2.jpeg",
+            "images/pics/safaga/3.jpg",
+            "images/pics/safaga/4.jpeg",
+            "images/pics/safaga/5.jpg",
+            "images/pics/safaga/6.jpg",
+            "images/pics/safaga/7.webp",
+          ],
+          aboutUs: {
+            images: [lang === "en" ? "images/pics/safaga/1.jpeg" : "images/pics/safaga/7.webp", lang === "en" ? "images/pics/safaga/7.webp" : "images/pics/safaga/1.jpeg"],
+            title: {
+              en: "The Warm Elegance of Red Safaga Granite",
+              ar: "دفء وأناقة جرانيت سفاجا الأحمر",
+              pt: "A Elegância Calorosa do Granito Vermelho Safaga",
+              fr: "L'Élégance Chaleureuse du Granite Rouge Safaga"
+            },
+            description: {
+              en: "Red Safaga Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت سفاجا الأحمر يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Granito Vermelho Safaga oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Granite Rouge Safaga offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+          name: {
+            en: "Red Safaga Granite",
+            ar: "جرانيت سفاجا الأحمر",
+            pt: "Granito Vermelho Safaga",
+            fr: "Granite Rouge Safaga"
+          },
+          description: {
+            en: "A strong and striking red granite.",
+            ar: "جرانيت أحمر قوي وجذاب.",
+            pt: "Um granito vermelho forte e impressionante.",
+            fr: "Un granite rouge fort et impressionnant."
+          },
+          main_image: "images/red_safaga.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/rosita/1.png",
+            "images/pics/rosita/2.png",
+            "images/pics/rosita/3.jpg",
+            "images/pics/rosita/4.jpg",
+            "images/pics/rosita/5.jpg",
+            "images/pics/rosita/6.jpeg",
+          ],
+          aboutUs: {
+            images: [lang === "en" ? "images/pics/rosita/5.jpg" : "images/pics/rosita/6.jpeg", lang === "en" ? "images/pics/rosita/6.jpeg" : "images/pics/rosita/5.jpg"],
+            title: {
+              en: "The Warm Elegance of Rozita Granite",
+              ar: "دفء وأناقة جرانيت روزيتا",
+              pt: "A Elegância Calorosa do Granito Rozita",
+              fr: "L'Élégance Chaleureuse du Granite Rozita"
+            },
+            description: {
+              en: "Rozita Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت روزيتا يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Granito Rozita oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Granite Rozita offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+          name: {
+            en: "Rozita Granite",
+            ar: "جرانيت روزيتا",
+            pt: "Granito Rozita",
+            fr: "Granite Rozita"
+          },
+          description: {
+            en: "Elegant granite with a rosy hue.",
+            ar: "جرانيت أنيق مع لون وردي.",
+            pt: "Um granito elegante com um tom rosado.",
+            fr: "Un granite élégant avec une teinte rose."
+          },
+          main_image: "images/rozita.jpg",
+        },
+        {
+          image_array: [
+            "images/pics/rosa/1.webp",
+            "images/pics/rosa/2.webp",
+            "images/pics/rosa/3.webp",
+            "images/pics/rosa/3.jpeg",
+          ],
+          aboutUs: {
+            images: [lang === "en" ? "images/pics/rosa/1.webp" : "images/pics/rosa/3.jpeg", lang === "en" ? "images/pics/rosa/3.jpeg" : "images/pics/rosa/1.webp"],
+            title: {
+              en: "The Warm Elegance of Rosa Katreen Granite",
+              ar: "دفء وأناقة جرانيت روزا كاترين",
+              pt: "A Elegância Calorosa do Granito Rosa Katreen",
+              fr: "L'Élégance Chaleureuse du Granite Rosa Katreen"
+            },
+            description: {
+              en: "Rosa Katreen Granite offers warmth and elegance, perfect for both classic and modern designs.",
+              ar: "جرانيت روزا كاترين يوفر الدفء والأناقة، مثالي للتصاميم الكلاسيكية والحديثة.",
+              pt: "O Granito Rosa Katreen oferece calor e elegância, perfeito para designs clássicos e modernos.",
+              fr: "Le Granite Rosa Katreen offre chaleur et élégance, parfait pour les designs classiques et modernes."
+            },
+            features: featuredProduct,
+            checklist: checklist,
+          },
+          relatedField: relatedFieldGranite,
+          name: {
+            en: "Rosa Katreen Granite",
+            ar: "جرانيت روزا كاترين",
+            pt: "Granito Rosa Katreen",
+            fr: "Granite Rosa Katreen"
+          },
+          description: {
+            en: "Classic granite with soft pink hues.",
+            ar: "جرانيت كلاسيكي مع درجات لون وردي لطيف.",
+            pt: "Um granito clássico com tons de rosa suaves.",
+            fr: "Un granite classique avec des tons de rose doux."
+          },
+          main_image: "images/rosa_katreen.jpg",}
+      ];
+  
+  
+      // Function to update the gallery dynamically
+      function updateGallery(selectedObject) {
+      const galleryContainer = document.getElementById("gallery-container");
+      galleryContainer.innerHTML = "";
+  
+      if (selectedObject?.image_array?.length > 0) {
+        selectedObject.image_array.forEach((image) => {
+          const galleryItem = document.createElement("div");
+          galleryItem.className = "col-lg-4 col-md-6 mt-4";
+  
+          galleryItem.innerHTML = `
+            <a href="${image}">
+              <img src="${image}" style="height: 100%;" alt="${selectedObject.name?.[lang] || "Image"}" />
+            </a>
+          `;
+          galleryContainer.appendChild(galleryItem);
+        });
+      } else {
+        galleryContainer.innerHTML = `
+          <div class="col-12">
+            <p>No images available for this selection.</p>
+          </div>
+        `;
+      }
+    }
+      // Function to update the name and description display
+      function updateDisplay(selectedObject) {
+      const nameDisplayElements = document.querySelectorAll("#name-display-1, #name-display-2, #name-display-3");
+      const descriptionDisplayElements = document.querySelectorAll("#description-display-1, #description-display-2, #description-display-3");
+  
+      const name = selectedObject?.name?.[lang] || "No matching name!";
+      const description = selectedObject?.description?.[lang] || "No description available.";
+  
+      nameDisplayElements.forEach((element) => (element.textContent = name));
+      descriptionDisplayElements.forEach((element) => (element.textContent = description));
+    }
+    function updateRelatedFields(relatedField) {
+      const relatedFieldsContainer = document.getElementById("related-fields-container");
+      relatedFieldsContainer.innerHTML = "";
+  
+      if (relatedField?.length > 0) {
+        relatedField.forEach((field, index) => {
+          const fieldItem = document.createElement("div");
+          fieldItem.className = "protfolio-tabs-item";
+  
+          fieldItem.innerHTML = `
+            <a href="${field.url || "#"}" class="protfolio-tabs-link">
+              <span class="portfolio-number">${String(index + 1).padStart(2, "0")}</span>
+              <h5 class="portfolio-title">${field.name?.[lang] || "Unnamed Project"}</h5>
+              <p class="portfolio-location">Category: ${field.categorie?.[lang] || "Uncategorized"}</p>
+            </a>
+            <img
+              decoding="async"
+              src="${field.image || "images/default.jpg"}"
+              alt="${field.name?.[lang] || "Unnamed Project"}"
+              class="protfolio-tabs-img"
+            />
+          `;
+          relatedFieldsContainer.appendChild(fieldItem);
+        });
+      } else {
+        relatedFieldsContainer.innerHTML = `
+          <div class="col-12">
+            <p>No related fields available.</p>
+          </div>
+        `;
+      }
+    }
+
+  
+  function generateAboutUs(aboutUs) {
+      const aboutUsContainer = document.querySelector(".about-us .container");
+  
+      if (aboutUs) {
+        aboutUsContainer.innerHTML = `
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="about-us-img">
+                <img src="${aboutUs.images[0]}" class="pq-image1 wow animated fadeInLeft" alt="About Us Image 1" />
+                <img src="${aboutUs.images[1]}" class="pq-image2 wow animated zoomIn" alt="About Us Image 2" />
+              </div>
+            </div>
+            <div class="col-xl-6 pq-about-us-padding wow animated fadeInRight">
+              <div class="pq-section-title pq-style-1 pq-mb-35">
+                <span class="pq-section-sub-title">${lang === "ar" ? "معلومات عنا" : "About Us"}</span>
+                <h5 class="pq-section-main-title">${aboutUs.title?.[lang]}</h5>
+                <p class="pq-section-description">${aboutUs.description?.[lang]}</p>
+              </div>
+              <div class="row pq-mb-45">
+                ${aboutUs.features
+                  ?.map(
+                    (feature) => `
+                    <div class="col-lg-6 col-md-6">
+                      <div class="pq-icon-box pq-style-2">
+                        <div class="pq-icon">
+                          <i class="${feature.icon}"></i>
+                        </div>
+                        <div class="pq-icon-box-content">
+                          <h5>${feature.title?.[lang]}</h5>
+                        </div>
+                      </div>
+                    </div>
+                  `
+                  )
+                  .join("")}
+              </div>
+              <ul class="pq-list-check pq-mb-45">
+                ${aboutUs.checklist
+                  ?.map(
+                    (item) => `
+                    <li>
+                      <i class="fas fa-circle"></i>
+                      <span>${item?.[lang]}</span>
+                    </li>
+                  `
+                  )
+                  .join("")}
+              </ul>
+            </div>
+          </div>
+        `;
+      } else {
+        aboutUsContainer.innerHTML = `<p>No About Us data available for this item.</p>`;
+      }
+    }
+   
+   console.log("faried");
+   
+    document.addEventListener("DOMContentLoaded", function () {
+  const nameParam = getQueryParam("name")?.toLowerCase();
+  console.log("URL nameParam:", nameParam);
+
+  const selectedObject = data.find(
+    (item) => item.name?.en?.toLowerCase() === nameParam
+  );
+
+  if (selectedObject) {
+    console.log("Matching Object Found:", selectedObject);
+    generateAboutUs(selectedObject.aboutUs);
+    updateGallery(selectedObject);
+    updateDisplay(selectedObject);
+    updateRelatedFields(selectedObject.relatedField);
+  } else {
+    console.error("No matching object found for name:", nameParam);
+  }
+});
+    </script>
   </body>
 
   <script>
@@ -194,2161 +1881,7 @@
   </script>
   <script src="../../../../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js"></script>
 
-  <script>
-    // Function to get query parameters
-    function getQueryParam(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
 
-    const data = [
-      {
-        image_array: [
-          "images/pics/Triesta/1.jpg",
-          "images/pics/Triesta/2.jpg",
-          "images/pics/Triesta/3.jpg",
-          "images/pics/Triesta/4.jpg",
-          "images/pics/Triesta/5.jpg",
-          "images/pics/Triesta/6.jpg",
-          "images/pics/Triesta/7.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/Triesta/6.jpg", "images/pics/Triesta/7.jpg"],
-          title: "The Warm Elegance of Sinai Pearl – Triesta",
-          description:
-            "Sinai Pearl – Triesta offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Sinai Pearl – Triesta",
-        description: "A premium Egyptian marble with a unique texture.",
-        main_image: "images/sinai_pearl_triesta.jpg",
-      },
-
-      {
-        image_array: [
-          "images/pics/Galala/1.jpg",
-          "images/pics/Galala/2.jpg",
-          "images/pics/Galala/3.jpg",
-          "images/pics/Galala/4.jpg",
-          "images/pics/Galala/5.jpg",
-          "images/pics/Galala/6.jpg",
-          "images/pics/Galala/7.jpeg",
-        ],
-        aboutUs: {
-          images: ["images/pics/Galala/6.jpg", "images/pics/Galala/7.jpeg"],
-          title: "The Warm Elegance of Galala Beige Marble",
-          description:
-            "Galala Beige Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Galala Beige Marble",
-        description: "Known for its warm beige color and smooth finish.",
-        main_image: "images/galala_beige.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/Galala/7.jpeg",
-          "images/pics/Galala/6.jpg",
-          "images/pics/Galala/5.jpg",
-          "images/pics/Galala/1.jpg",
-          "images/pics/Galala/4.jpg",
-          "images/pics/Galala/3.jpg",
-          "images/pics/Galala/2.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/Galala/1.jpg", "images/pics/Galala/2.jpg"],
-          title: "The Warm Elegance of Galala Light Marble",
-          description:
-            "Galala Light Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Galala Light Marble",
-        description: "A lighter variant of Galala Marble, offering elegance.",
-        main_image: "images/galala_light.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/stones/FELLETTO.jpg",
-          "images/pics/fletto/1.jpg",
-          "images/pics/fletto/2.jpg",
-          "images/pics/fletto/3.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/fletto/2.jpg", "images/pics/fletto/3.jpg"],
-          title: "The Warm Elegance of Fletto Marble",
-          description:
-            "Fletto Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Fletto Marble",
-        description: "Distinctive marble with a flecked pattern.",
-        main_image: "images/fletto.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/sinaigray/1.jpg",
-          "images/pics/sinaigray/2.jpg",
-          "images/pics/sinaigray/3.jpg",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/sinaigray/1.jpg",
-            "images/pics/sinaigray/2.jpg",
-          ],
-          title: "The Warm Elegance of Sinai Pearl Gray",
-          description:
-            "Sinai Pearl Gray offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Sinai Pearl Gray",
-        description: "Elegant gray marble with subtle patterns.",
-        main_image: "images/sinai_pearl_gray.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/Sunny/1.jpg",
-          "images/pics/Sunny/2.jpg",
-          "images/pics/Sunny/3.jpg",
-          "images/pics/Sunny/4.jpg",
-          "images/pics/Sunny/5.jpg",
-          "images/pics/Sunny/6.jpg",
-          "images/pics/Sunny/7.jpg",
-        ],
-
-        aboutUs: {
-          images: ["images/pics/Sunny/2.jpg", "images/pics/Sunny/3.jpg"],
-          title: "The Warm Elegance of Sunny Menia Marble",
-          description:
-            "Sunny Menia Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Sunny Menia Marble",
-        description: "Radiant marble with a sunny, golden tone.",
-        main_image: "images/sunny_menia.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/golden cream/1.webp",
-          "images/pics/golden cream/2.jpg",
-          "images/pics/golden cream/3.jpeg",
-          "images/pics/golden cream/4.jpg",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/golden cream/1.webp",
-            "images/pics/golden cream/2.jpg",
-          ],
-          title: "The Warm Elegance of Golden Cream Marble",
-          description:
-            "Golden Cream Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Golden Cream Marble",
-        description: "Luxurious cream marble with golden hues.",
-        main_image: "images/golden_cream.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/silvia/1.jpg",
-          "images/pics/silvia/2.jpg",
-          "images/pics/silvia/3.jpg",
-          "images/pics/silvia/4.jpg",
-          "images/pics/silvia/5.jpg",
-          "images/pics/silvia/6.jpg",
-          "images/pics/silvia/7.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/silvia/1.jpg", "images/pics/silvia/2.jpg"],
-          title: "The Warm Elegance of Silvia Menia Marble",
-          description:
-            "Silvia Menia Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Silvia Menia Marble",
-        description: "A classic choice for timeless elegance.",
-        main_image: "images/silvia_menia.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/Sunny/7.jpg",
-          "images/pics/Sunny/2.jpg",
-          "images/pics/Sunny/3.jpg",
-          "images/pics/Sunny/1.jpg",
-          "images/pics/Sunny/5.jpg",
-          "images/pics/Sunny/6.jpg",
-          "images/pics/Sunny/4.jpg",
-        ],
-
-        aboutUs: {
-          images: ["images/pics/Sunny/6.jpg", "images/pics/Sunny/7.jpg"],
-          title: "The Warm Elegance of Sunny Light Marble",
-          description:
-            "Sunny Light Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Sunny Light Marble",
-        description: "Bright and warm marble for modern designs.",
-        main_image: "images/sunny_light.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/sunny dark/1.jpg",
-          "images/pics/sunny dark/2.jpeg",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/sunny dark/1.jpg",
-            "images/pics/sunny dark/2.jpeg",
-          ],
-          title: "The Warm Elegance of Sunny Dark Marble",
-          description:
-            "Sunny Dark Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Sunny Dark Marble",
-        description: "Dark-toned marble with a sophisticated look.",
-        main_image: "images/sunny_dark.jpg",
-      },
-
-      {
-        image_array: [
-          "images/pics/Miley Grey/2.jpg",
-          "images/pics/Miley Grey/3.jpg",
-          "images/pics/Miley Grey/4.jpg",
-          "images/pics/Miley Grey/5.jpg",
-          "images/pics/Miley Grey/6.jpg",
-          "images/pics/Miley Grey/7.jpg",
-          "images/pics/Miley Grey/8.jpg",
-          "images/pics/Miley Grey/9.jpg",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/Miley Grey/7.jpg",
-            "images/pics/Miley Grey/8.jpg",
-          ],
-          title: "The Warm Elegance of Milly Gray Marble",
-          description:
-            "Milly Gray Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Milly Gray Marble",
-        description: "Refined gray marble with a sleek finish.",
-        main_image: "images/milly_gray.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/Miley Grey/2.jpg",
-          "images/pics/Miley Grey/3.jpg",
-          "images/pics/Miley Grey/4.jpg",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/Miley Grey/3.jpg",
-            "images/pics/Miley Grey/4.jpg",
-          ],
-          title: "The Warm Elegance of Milly Brown Marble",
-          description:
-            "Milly Brown Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Milly Brown Marble",
-        description: "Warm brown marble with earthy tones.",
-        main_image: "images/milly_brown.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/Samaha/1.jpg",
-          "images/pics/Samaha/2.jpg",
-          "images/pics/Samaha/3.jpg",
-          "images/pics/Samaha/4.jpg",
-          "images/pics/Samaha/5.jpg",
-          "images/pics/Samaha/6.jpg",
-          "images/pics/Samaha/7.jpeg",
-          "images/pics/Samaha/8.jpeg",
-        ],
-        aboutUs: {
-          images: ["images/pics/Samaha/1.jpg", "images/pics/Samaha/2.jpg"],
-          title: "The Warm Elegance of Samaha Marble",
-          description:
-            "Samaha Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Samaha Marble",
-        description: "High-quality Egyptian marble for versatile uses.",
-        main_image: "images/samaha.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/katrena/1.jpg",
-          "images/pics/katrena/1.png",
-          "images/pics/katrena/3.jpg",
-          "images/pics/katrena/5.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/katrena/1.jpg", "images/pics/katrena/1.png"],
-          title: "The Warm Elegance of Katreen Marble",
-          description:
-            "Katreen Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Katreen Marble",
-        description: "Elegant marble with a natural appeal.",
-        main_image: "images/katreen.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/khatam/1.webp",
-          "images/pics/khatam/2.jpeg",
-          "images/pics/khatam/3.jpeg",
-          "images/pics/khatam/4.jpeg",
-          "images/pics/khatam/5.jpeg",
-          "images/pics/khatam/6.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/khatam/1.webp", "images/pics/khatam/2.jpeg"],
-          title: "The Warm Elegance of Khatmya Marble",
-          description:
-            "Khatmya Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Khatmya Marble",
-        description: "Exquisite marble with unique veining.",
-        main_image: "images/khatmya.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/Zaafrana/1.jpg",
-          "images/pics/Zaafrana/2.jpg",
-          "images/pics/Zaafrana/3.jpeg",
-          "images/pics/Zaafrana/4.jpeg",
-        ],
-        aboutUs: {
-          images: ["images/pics/Zaafrana/1.jpg", "images/pics/Zaafrana/3.jpeg"],
-          title: "The Warm Elegance of Zafarana Marble",
-          description:
-            "Zafarana Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Zafarana Marble",
-        description: "Premium marble with a distinctive light tone.",
-        main_image: "images/zafarana.jpg",
-      },
-
-      {
-        image_array: [
-          "images/pics/onyex/1.jpg",
-          "images/pics/onyex/2.jpg",
-          "images/pics/onyex/3.jpg",
-          "images/pics/onyex/4.jpg",
-          "images/pics/onyex/5.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/onyex/4.jpg", "images/pics/onyex/5.jpg"],
-          title: "The Warm Elegance of Onyx Marble",
-          description:
-            "Onyx Marble offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Sinai Pearl – Triesta",
-            image: "images/pics/Galala/1.jpg",
-            categorie: "Sinai",
-            url: "about-us.html?name=Sinai Pearl – Triesta",
-          },
-          {
-            name: "Galala Beige Marble",
-            image: "images/pics/Galala/2.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Beige Marble",
-          },
-          {
-            name: "Galala Light Marble",
-            image: "images/pics/Sunny/1.jpg",
-            categorie: "Galala",
-            url: "about-us.html?name=Galala Light Marble",
-          },
-          {
-            name: "Onyx Marble",
-            image: "images/pics/onyex/4.jpg",
-            categorie: "Onyx",
-            url: "about-us.html?name=Onyx Marble",
-          },
-          {
-            name: "Samaha Marble",
-            image: "images/pics/Samaha/1.jpg",
-            categorie: "Samaha",
-            url: "about-us.html?name=Samaha Marble",
-          },
-          {
-            name: "Zafarana Marble",
-            image: "images/pics/Zaafrana/1.jpg",
-            categorie: "Zaafrana",
-            url: "about-us.html?name=Zafarana Marble",
-          },
-        ],
-        name: "Onyx Marble",
-        description: "Luxurious marble with translucent qualities.",
-        main_image: "images/onyx.jpg",
-      },
-
-      {
-        image_array: [
-          "images/pics/byanco/1.jpeg",
-          "images/pics/byanco/2.jpeg",
-          "images/pics/byanco/3.jpeg",
-          "images/pics/byanco/4.jpeg",
-          "images/pics/byanco/5.jpeg",
-          "images/pics/byanco/6.jpeg",
-        ],
-        aboutUs: {
-          images: ["images/pics/byanco/1.jpeg", "images/pics/byanco/6.jpeg"],
-          title: "The Warm Elegance of Bianco Halayeb Granite",
-          description:
-            "Bianco Halayeb Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Bianco Halayeb Granite",
-        description: "Granite with a beautiful white and gray mix.",
-        main_image: "images/bianco_halayeb.jpg",
-      },
-
-      {
-        image_array: [
-          "images/pics/gandola/1.jpg",
-          "images/pics/gandola/2.jpeg",
-          "images/pics/gandola/3.jpeg",
-          "images/pics/gandola/4.webp",
-        ],
-        aboutUs: {
-          images: ["images/pics/gandola/3.jpeg", "images/pics/gandola/4.webp"],
-          title: "The Warm Elegance of Gandola Granite",
-          description:
-            "Gandola Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Gandola Granite",
-        description: "Durable granite with a rich texture.",
-        main_image: "images/gandola.jpg",
-      },
-
-      {
-        image_array: [
-          "images/pics/newhalayp/1.jpg",
-          "images/pics/newhalayp/2.png",
-          "images/pics/newhalayp/3.jpg",
-          "images/pics/newhalayp/4.webp",
-          "images/pics/newhalayp/5.jpeg",
-          "images/pics/newhalayp/6.jpeg",
-          "images/pics/newhalayp/7.png",
-          "images/pics/newhalayp/8.webp",
-          "images/pics/newhalayp/9.webp",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/newhalayp/1.jpg",
-            "images/pics/newhalayp/2.png",
-          ],
-          title: "The Warm Elegance of New Halayeb Granite",
-          description:
-            "New Halayeb Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "New Halayeb Granite",
-        description: "Modern granite with a refined look.",
-        main_image: "images/new_halayeb.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/rosa hody/1.jpeg",
-          "images/pics/rosa hody/6.png",
-          "images/pics/rosa hody/2.jpeg",
-          "images/pics/rosa hody/3.jpeg",
-          "images/pics/rosa hody/4.png",
-          "images/pics/rosa hody/5.png",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/rosa hody/2.jpeg",
-            "images/pics/rosa hody/3.jpeg",
-          ],
-          title: "The Warm Elegance of Rosa Hodi Granite",
-          description:
-            "Rosa Hodi Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Rosa Hodi Granite",
-        description: "Pink-toned granite with unique patterns.",
-        main_image: "images/rosa_hodi.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/Aswan red/1.jpg",
-          "images/pics/Aswan red/2.jpg",
-          "images/pics/Aswan red/3.jpeg",
-          "images/pics/Aswan red/4.jpg",
-          "images/pics/Aswan red/5.jpg",
-          "images/pics/Aswan red/6.jpg",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/Aswan red/1.jpg",
-            "images/pics/Aswan red/2.jpg",
-          ],
-          title: "The Warm Elegance of Red Aswan Granite",
-          description:
-            "Red Aswan Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Red Aswan Granite",
-        description: "Vibrant red granite with a bold statement.",
-        main_image: "images/red_aswan.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/rosa nasr/1.jpeg",
-          "images/pics/rosa nasr/2.webp",
-          "images/pics/rosa nasr/7.webp",
-          "images/pics/rosa nasr/3.jpg",
-          "images/pics/rosa nasr/4.jpeg",
-          "images/pics/rosa nasr/5.jpg",
-          "images/pics/rosa nasr/6.jpeg",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/rosa nasr/1.jpeg",
-            "images/pics/rosa nasr/2.webp",
-          ],
-          title: "The Warm Elegance of Rosa Elnasr Granite",
-          description:
-            "Rosa Elnasr Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Rosa Elnasr Granite",
-        description: "Charming pink granite with natural beauty.",
-        main_image: "images/rosa_elnasr.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/red forsan/1.jpeg",
-          "images/pics/red forsan/2.webp",
-          "images/pics/red forsan/3.jpg",
-          "images/pics/red forsan/4.webp",
-          "images/pics/red forsan/5.jpeg",
-          "images/pics/red forsan/6.webp",
-        ],
-        aboutUs: {
-          images: [
-            "images/pics/red forsan/1.jpeg",
-            "images/pics/red forsan/2.webp",
-          ],
-          title: "The Warm Elegance of Red Forsan Granite",
-          description:
-            "Red Forsan Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-                relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Red Forsan Granite",
-        description: "Distinct red granite with unique veining.",
-        main_image: "images/red_forsan.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/vardy/1.jpg",
-          "images/pics/vardy/2.jpeg",
-          "images/pics/vardy/3.jpg",
-          "images/pics/vardy/4.webp",
-          "images/pics/vardy/5.jpeg",
-          "images/pics/vardy/6.jpg",
-        ],
-        aboutUs: {
-          images: ["images/pics/vardy/4.webp", "images/pics/vardy/5.jpeg"],
-          title: "The Warm Elegance of Verdy Gazal Granite",
-          description:
-            "Verdy Gazal Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-        name: "Verdy Gazal Granite",
-        description: "Granite with earthy green tones and patterns.",
-        main_image: "images/verdy_gazal.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/safaga/1.jpeg",
-          "images/pics/safaga/2.jpeg",
-          "images/pics/safaga/3.jpg",
-          "images/pics/safaga/4.jpeg",
-          "images/pics/safaga/5.jpg",
-          "images/pics/safaga/6.jpg",
-          "images/pics/safaga/7.webp",
-        ],
-        aboutUs: {
-          images: ["images/pics/safaga/1.jpeg", "images/pics/safaga/7.webp"],
-          title: "The Warm Elegance of Red Safaga Granite",
-          description:
-            "Red Safaga Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-        name: "Red Safaga Granite",
-        description: "A strong and striking red granite.",
-        main_image: "images/red_safaga.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/rosita/1.png",
-          "images/pics/rosita/2.png",
-          "images/pics/rosita/3.jpg",
-          "images/pics/rosita/4.jpg",
-          "images/pics/rosita/5.jpg",
-          "images/pics/rosita/6.jpeg",
-        ],
-        aboutUs: {
-          images: ["images/pics/rosita/5.jpg", "images/pics/rosita/6.jpeg"],
-          title: "The Warm Elegance of Rozita Granite",
-          description:
-            "Rozita Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-        name: "Rozita Granite",
-        description: "Elegant granite with a rosy hue.",
-        main_image: "images/rozita.jpg",
-      },
-      {
-        image_array: [
-          "images/pics/rosa/1.webp",
-          "images/pics/rosa/2.webp",
-          "images/pics/rosa/3.webp",
-          "images/pics/rosa/3.jpeg",
-        ],
-        aboutUs: {
-          images: ["images/pics/rosa/1.webp", "images/pics/rosa/3.jpeg"],
-          title: "The Warm Elegance of Rosa Katreen Granite",
-          description:
-            "Rosa Katreen Granite offers warmth and elegance, perfect for both classic and modern designs.",
-          features: [
-            { icon: "flaticon-tile-2", title: "Smooth Finish" },
-            { icon: "flaticon-modern-art", title: "Timeless Appeal" },
-          ],
-          checklist: [
-            "Ideal for flooring and wall cladding",
-            "Resistant to wear and tear",
-            "Adds a touch of luxury to interiors",
-          ],
-        },
-        relatedField: [
-          {
-            name: "Gandola Granite",
-            image: "images/pics/gandola/3.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Gandola%20Granite",
-          },
-          {
-            name: "New Halayeb Granite",
-            image: "images/pics/newhalayp/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=New%20Halayeb%20Granite",
-          },
-          {
-            name: "Rosa Hodi Granite",
-            image: "images/pics/rosa hody/2.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Hodi%20Granite",
-          },
-          {
-            name: "Red Aswan Granite",
-            image: "images/pics/Aswan red/1.jpg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Aswan%20Granite",
-          },
-          {
-            name: "Rosa Elnasr Granite",
-            image: "images/pics/rosa nasr/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Rosa%20Elnasr%20Granite",
-          },
-          {
-            name: "Red Forsan Granite",
-            image: "images/pics/red forsan/1.jpeg",
-            categorie: "Granite",
-            url: "about-us.html?name=Red%20Forsan%20Granite",
-          },
-          {
-            name: "Verdy Gazal Granite",
-            image: "images/pics/vardy/4.webp",
-            categorie: "Granite",
-            url: "about-us.html?name=Verdy%20Gazal%20Granite",
-          },
-        ],
-
-        name: "Rosa Katreen Granite",
-        description: "Classic granite with soft pink hues.",
-        main_image: "images/rosa_katreen.jpg",
-      },
-    ];
-
-    // Function to update the gallery dynamically
-    function updateGallery(selectedObject) {
-      const galleryContainer = document.getElementById("gallery-container");
-
-      // Clear the existing content in the gallery
-      galleryContainer.innerHTML = "";
-
-      if (selectedObject && selectedObject.image_array.length > 0) {
-        // Populate gallery with images from the selected object
-        selectedObject.image_array.forEach((image) => {
-          const galleryItem = document.createElement("div");
-          galleryItem.className = "col-lg-4 col-md-6 mt-4";
-
-          galleryItem.innerHTML = `
-            <a href="${image}">
-              <img src="${image}" style="height: 100%;" alt="${selectedObject.name}" />
-            </a>
-          `;
-
-          galleryContainer.appendChild(galleryItem);
-        });
-      } else {
-        // Display a message if no images are found
-        galleryContainer.innerHTML = `
-          <div class="col-12">
-            <p>No images available for this selection.</p>
-          </div>
-        `;
-      }
-    }
-
-    // Function to update the name and description display
-    function updateDisplay(selectedObject) {
-      const nameDisplayElements = document.querySelectorAll(
-        "#name-display-1, #name-display-2, #name-display-3"
-      );
-      const descriptionDisplayElements = document.querySelectorAll(
-        "#description-display-1, #description-display-2, #description-display-3"
-      );
-
-      if (selectedObject) {
-        nameDisplayElements.forEach((element) => {
-          element.textContent = selectedObject.name;
-        });
-
-        descriptionDisplayElements.forEach((element) => {
-          element.textContent = selectedObject.description;
-        });
-      } else {
-        nameDisplayElements.forEach((element) => {
-          element.textContent = "No matching name!";
-        });
-
-        descriptionDisplayElements.forEach((element) => {
-          element.textContent = "No description available.";
-        });
-      }
-    }
-
-    function updateRelatedFields(relatedField) {
-      const relatedFieldsContainer = document.getElementById(
-        "related-fields-container"
-      );
-
-      // Clear existing content
-      relatedFieldsContainer.innerHTML = "";
-
-      // Check if relatedField contains items
-      if (relatedField && relatedField.length > 0) {
-        relatedField.forEach((field, index) => {
-          const fieldItem = document.createElement("div");
-          fieldItem.className = "protfolio-tabs-item";
-
-          fieldItem.innerHTML = `
-        <a href="${field.url || "#"}" class="protfolio-tabs-link">
-          <span class="portfolio-number">${String(index + 1).padStart(
-            2,
-            "0"
-          )}</span>
-          <h5 class="portfolio-title">${field.name || "Unnamed Project"}</h5>
-          <p class="portfolio-location">Category: ${
-            field.categorie || "Uncategorized"
-          }</p>
-        </a>
-        <img
-          decoding="async"
-          src="${field.image || "images/default.jpg"}"
-          alt="${field.name || "Unnamed Project"}"
-          class="protfolio-tabs-img"
-        />
-      `;
-
-          relatedFieldsContainer.appendChild(fieldItem);
-        });
-      } else {
-        // Display a message if no related fields are found
-        relatedFieldsContainer.innerHTML = `
-      <div class="col-12">
-        <p>No related fields available.</p>
-      </div>
-    `;
-      }
-    }
-    // Get the 'name' parameter from the URL
-    const nameParam = getQueryParam("name");
-
-    // Find the object matching the 'name' parameter
-    const selectedObject = data.find(
-      (item) => item.name.toLowerCase() === nameParam?.toLowerCase()
-    );
-
-    function generateAboutUs(aboutUs) {
-      const aboutUsContainer = document.querySelector(".about-us .container");
-
-      if (aboutUs) {
-        aboutUsContainer.innerHTML = `
-      <div class="row">
-        <div class="col-xl-6">
-          <div class="about-us-img">
-            <img src="${
-              aboutUs.images[0]
-            }" class="pq-image1 wow animated fadeInLeft" alt="" />
-            <img src="${
-              aboutUs.images[1]
-            }" class="pq-image2 wow animated zoomIn" alt="" />
-          </div>
-        </div>
-        <div class="col-xl-6 pq-about-us-padding wow animated fadeInRight">
-          <div class="pq-section-title pq-style-1 pq-mb-35">
-            <span class="pq-section-sub-title">about us</span>
-            <h5 class="pq-section-main-title">${aboutUs.title}</h5>
-            <p class="pq-section-description">${aboutUs.description}</p>
-          </div>
-          <div class="row pq-mb-45">
-            ${aboutUs.features
-              .map(
-                (feature) => `
-              <div class="col-lg-6 col-md-6">
-                <div class="pq-icon-box pq-style-2">
-                  <div class="pq-icon">
-                    <i class="${feature.icon}"></i>
-                  </div>
-                  <div class="pq-icon-box-content">
-                    <h5>${feature.title}</h5>
-                  </div>
-                </div>
-              </div>
-            `
-              )
-              .join("")}
-          </div>
-          <ul class="pq-list-check pq-mb-45">
-            ${aboutUs.checklist
-              .map(
-                (item) => `
-              <li>
-                <i class="fas fa-circle"></i>
-                <span>${item}</span>
-              </li>
-            `
-              )
-              .join("")}
-          </ul>
-        </div>
-      </div>
-    `;
-      } else {
-        aboutUsContainer.innerHTML = `<p>No About Us data available for this item.</p>`;
-      }
-    }
-
-    if (selectedObject) {
-      generateAboutUs(selectedObject.aboutUs);
-    }
-    // Update the gallery and display
-    updateGallery(selectedObject);
-    updateDisplay(selectedObject);
-    updateRelatedFields(selectedObject.relatedField);
-  </script>
 
   <!-- Mirrored from peacefulqode.co.in/themes/marblex/html/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 13:51:23 GMT -->
 </html>

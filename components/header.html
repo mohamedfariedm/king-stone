@@ -205,7 +205,7 @@
                           class="sub-menu"
                         >
                           <li class="menu-item">
-                            <a href="about-us.html?name=Sinai Pearl – Triesta"
+                            <a href="about-us.html?name=Sinai Pearl – Triesta&lang=en"
                               >Sinai Pearl – Triesta</a
                             >
                           </li>
@@ -395,42 +395,9 @@
                   </div>
                 </div>
                 <div class="pq-header-info-box">
-                  <div class="pq-menu-search-block">
-                    <a
-                      href="javascript:void(0)"
-                      class="pq-tools-serach-button"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvassearch"
-                    >
-                      <i class="ti-search"></i>
-                    </a>
-                    <div
-                      class="offcanvas offcanvas-top"
-                      tabindex="-1"
-                      id="offcanvassearch"
-                    >
-                      <form role="search" method="get" class="search-form">
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="offcanvas"
-                          aria-label="Close"
-                        ></button>
-                        <label>
-                          <span class="screen-reader-text">Search for:</span>
-                          <input
-                            type="search"
-                            class="search-field"
-                            placeholder="Search …"
-                            value=""
-                            name="s"
-                          />
-                        </label>
-                        <button type="submit" class="search-submit">
-                          <span class="screen-reader-text">Search</span>
-                        </button>
-                      </form>
-                    </div>
+                  <div class="dropdown" tabindex="0">
+                    <button id="dropdown-btn"></button>
+                    <ul class="dropdown-content" id="dropdown-content"></ul>
                   </div>
                   <div class="pq-toggle-btn">
                     <a href="javascript:void(0)" class="menu-toggle">
@@ -456,3 +423,4 @@
       </div>
     </header>
     <!-- Header -->
+
