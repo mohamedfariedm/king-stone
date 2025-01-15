@@ -525,43 +525,43 @@ if (window.RS_MODULES.checkMinimal !== undefined) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll("[data-include]");
+    const elements = document.querySelectorAll("[data-include]");
 
-  const loadComponent = (element) => {
-      const file = element.getAttribute("data-include");
+    const loadComponent = (element) => {
+        const file = element.getAttribute("data-include");
 
-      return new Promise((resolve, reject) => {
-          if (file) {
-              fetch(file)
-                  .then((response) => {
-                      if (!response.ok) {
-                          console.error(`Failed to fetch ${file}: ${response.status}`);
-                          throw new Error(`HTTP error! Status: ${response.status}`);
-                      }
-                      return response.text();
-                  })
-                  .then((html) => {
-                      element.innerHTML = html;
-                      element.removeAttribute("data-include");
+        return new Promise((resolve, reject) => {
+            if (file) {
+                fetch(file)
+                    .then((response) => {
+                        if (!response.ok) {
+                            console.error(`Failed to fetch ${file}: ${response.status}`);
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.text();
+                    })
+                    .then((html) => {
+                        element.innerHTML = html;
+                        element.removeAttribute("data-include");
 
-                      // Trigger translation for header specifically
-                      if (file.includes("header.html")) {
-                          updateTranslations(); // Apply translations after header loads
-                      }
+                        // Trigger translation for header specifically
+                        if (file.includes("header.html")) {
+                            updateTranslations(); // Apply translations after header loads
+                        }
 
-                      resolve(); // Resolve the promise
-                  })
-                  .catch((error) => {
-                      console.error(`Error loading component: ${error.message}`);
-                      reject(error);
-                  });
-          } else {
-              reject(new Error("File attribute is missing."));
-          }
-      });
-  };
+                        resolve(); // Resolve the promise
+                    })
+                    .catch((error) => {
+                        console.error(`Error loading component: ${error.message}`);
+                        reject(error);
+                    });
+            } else {
+                reject(new Error("File attribute is missing."));
+            }
+        });
+    };
 
-  Promise.all(Array.from(elements).map(loadComponent))
-      .then(() => console.log("All components loaded."))
-      .catch((error) => console.error(`Error loading components: ${error.message}`));
+    Promise.all(Array.from(elements).map(loadComponent))
+        .then(() => console.log("All components loaded."))
+        .catch((error) => console.error(`Error loading components: ${error.message}`));
 });
