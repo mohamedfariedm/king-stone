@@ -796,13 +796,18 @@
           }
 
           // Update dropdown button with the selected locale
-          dropdownBtn.innerHTML = `
-      <img src="${getFlagSrc(selectedLocale.flag)}" alt="${
-            selectedLocale.name
-          }" style="width: 20px; margin-right: 8px;" />
-      ${selectedLocale.name}
-      <span class="arrow-down"></span>
-    `;
+          const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
+
+          // Update dropdown button content based on screen size
+          dropdownBtn.innerHTML = isSmallScreen
+            ? `<img src="${getFlagSrc(selectedLocale.flag)}" alt="${
+                selectedLocale.name
+              }" style="width: 20px;" />`
+            : `<img src="${getFlagSrc(selectedLocale.flag)}" alt="${
+                selectedLocale.name
+              }" style="width: 20px; margin-right: 8px;" />
+     ${selectedLocale.name}
+     <span class="arrow-down"></span>`;
 
           // Update navigation links with the selected locale
           updateNavLinks(localeCode);

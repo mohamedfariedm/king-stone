@@ -7463,7 +7463,7 @@ Custom Css
 
 .dropdown button {
   background-color: #253849;
-  min-width: 130px;
+  min-width: 50px;
   width: max-content;
   height: 40px;
   border-radius: 5px;
